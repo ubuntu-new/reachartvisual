@@ -1,0 +1,9 @@
+{
+    "navs": {
+      "about": {"title": "About Us", "link": "about"}, 
+      "shop": {"title": "Shop", "link": "shop"}, 
+      "blog": {"title": "Blog", "link": "blog"},
+      "contact": {"title": "Contact", "link": "contact"}, 
+      "faq": {"title": "FAQ", "link": "faq"}
+    }
+  }

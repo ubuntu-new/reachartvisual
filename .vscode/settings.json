@@ -1,0 +1,18 @@
+{
+    "path-intellisense.mappings": {
+      // Configures if the built-in HTML language suggests Angular V1 tags and properties.
+"html.suggest.angular1": true,
+
+// Configures if the built-in HTML language suggests Ionic tags, properties and values.
+"html.suggest.ionic": true,
+
+// Configures if the built-in HTML language suggests HTML5 tags, properties and values.
+"html.suggest.html5": true
+    
+    },
+    "vetur.format.styleInitialIndent": true,
+    "vetur.format.options.useTabs": true,
+    "vetur.format.defaultFormatter.html": "js-beautify-html",
+    "path-intellisense.extensionOnImport": true,
+  
+}

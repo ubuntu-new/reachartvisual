@@ -1,0 +1,115 @@
+<template>
+<div>
+    <!-- Start Page Title Area -->
+    <div class="container p-0">
+        <!-- Start Cart Area -->
+        <div class="cart-area ptb-60  backgroundWhite">
+            <div class="container">
+                <form>
+                    <div class="row ">
+                        <div class="col-8 checkout-details ">
+                            <div class="rectangle">
+                                <h3 class="title"> Choose Payment Method</h3>
+                            
+                            </div>
+                        <div class="row">
+                                    <div class="cardButt" @click="sendPayment('card')">
+                                        <span>
+                                            Pay by Card
+                                        </span>
+                                    </div>
+                                    <div class="cardButt" @click="sendPayment('cash')">
+                                        Pay by Cash
+                                    </div>
+                                </div>
+                        </div>
+
+                        <div class="col-4 backgroundGray short">
+                            <div class="racxa">
+                            <div class="cart-table table-responsive">
+                                <table class="table table-bordered webertela">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">Details</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Full price <span style="float:right"><b>${{parseFloat(cartTotal + 10).toFixed(2)}}</b></span></td>
+                                        </tr>
+                                        <nuxt-link to="/checkout" class="btn btn-checkout">Buy</nuxt-link>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                </div>
+
+            </div>
+        </form>
+    </div>
+
+</div>
+<!-- End Cart Area -->
+    </div>
+
+    <!-- End Checkout Area -->
+</div>
+</template>
+
+<style scoped>
+.cardButt{
+  width: 185px;
+  height: 60px;
+  padding: 18px 50px 21px;
+  border-radius: 10px;
+  background-color: #161e17;
+  color:aliceblue;
+}
+  
+</style>
+
+<script>
+import firebase from '../../plugins/firebase';
+export default {
+    data() {
+        return {
+            personDetails: {
+                fullName: '',
+                address: '',
+                city: '',
+                email: '',
+                phone: '',
+                createdAt: new Date()
+            },
+            e1: 1
+        }
+    },
+    computed: {
+        cart() {
+            return this.$store.getters.cart
+        },
+        cartTotal() {
+            return this.$store.getters.totalAmount
+        }
+    },
+    methods: {
+        add() {
+            const cartData = {
+                details: this.personDetails,
+                items: this.cart
+            }
+            const db = firebase.firestore();
+            const dbOrderRef = db.collection('orders');
+            dbOrderRef.add(cartData);
+            this.$toast.success(`Thanks for the order`, {
+                icon: 'fas fa-cart-plus'
+            });
+            this.$store.dispatch('cartEmpty')
+            this.$router.push("/");
+        },
+        sendPayment(type){
+            this.$emit('onPaymentType', type);
+        },
+    }
+}
+</script>

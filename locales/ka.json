@@ -1,0 +1,9 @@
+{
+    "navs": {
+      "about": {"title": "ჩვენს შესახებ", "link": "about"}, 
+      "shop": {"title": "მაღაზია", "link": "shop"}, 
+      "blog": {"title": "ბლოგი", "link": "blog"},
+      "contact": {"title": "კონტაქტი", "link": "contact"},
+      "faq": {"title": "FAQ", "link": "faq"}
+    }
+  }

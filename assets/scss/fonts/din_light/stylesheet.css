@@ -1,0 +1,12 @@
+@font-face {
+    font-family: 'DIN';
+    src: url('DIN-Light.eot');
+    src: url('DIN-Light.eot?#iefix') format('embedded-opentype'),
+        url('DIN-Light.woff2') format('woff2'),
+        url('DIN-Light.woff') format('woff'),
+        url('DIN-Light.ttf') format('truetype'),
+        url('DIN-Light.svg#DIN-Light') format('svg');
+    font-weight: 300;
+    font-style: normal;
+}
+

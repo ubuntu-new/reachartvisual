@@ -1,0 +1,22 @@
+$media: screen;
+$feature_min: min-width;
+$feature_max: max-width;
+$value_one: 767px;
+$value_two: 768px;
+$value_three: 991px;
+$value_four: 992px;
+$value_five: 1199px;
+$value_six: 1920px;
+
+
+
+@media only #{$media} and ($feature_min : $value_six)  {
+    .container, .container-lg, .container-md, .container-sm, .container-xl
+    {
+        max-width: 1436px !important;
+    }
+    .container.products
+    {
+        width: 90% !important;
+    }
+}
