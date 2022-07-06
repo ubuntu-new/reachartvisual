@@ -49,7 +49,7 @@
 										Virtual Exhibision
 										</a>
 									</li>
-									<li class="nav-item p-relative">
+									<!-- <li class="nav-item p-relative">
 										<nuxt-link
 											to="/rav"
 											class="nav-link"
@@ -60,7 +60,7 @@
 											to="/mus"
 											class="nav-link"
 										>Must &nbsp;Haves</nuxt-link>
-									</li>
+									</li> -->
 
 									<!-- <li class="nav-item p-relative">
                                     <nuxt-link to="/about-full" class="nav-link">Virtual Exhibision</nuxt-link>

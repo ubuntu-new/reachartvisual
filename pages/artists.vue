@@ -91,13 +91,13 @@ export default {
 		axios
 			.request({
 				method: "post",
-				url: "https://art.webertela.online/rest/web/index.php?r=v1/artists/list",
+				url: "https://reachartvisual.com/back_api/rest/web/index.php?r=v1/artists/list",
 
 				// data: bodyFormData,
 			})
 			.then((response) => {
 				console.log("Products Response: ", response);
-				this.allArtists = response.data;
+				this.allArtists = response.data;w
 			});
 	},
 };

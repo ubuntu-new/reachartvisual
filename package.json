@@ -1,7 +1,7 @@
 {
-  "name": "August",
+  "name": "reachartvisual",
   "version": "1.0.0",
-  "description": "August",
+  "description": "Reach Art VIsual",
   "author": "Levan Andghuladze (webertela)",
   "private": true,
   "scripts": {
@@ -29,6 +29,7 @@
     "vue-carousel": "^0.18.0",
     "vue-i18n": "^8.24.3",
     "vue-server-renderer": "2.6.12",
+    "vue-social-sharing": "^3.0.9",
     "vue-toastification": "^0.8.0",
     "vuelidate": "^0.7.6",
     "vueperslides": "^2.13.0",

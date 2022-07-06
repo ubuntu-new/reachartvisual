@@ -38,21 +38,21 @@ export default {
     htmlAttrs: {
       lang: 'en',
     },
-    title: 'Reach art visual',
-    meta: [
-      { charset: 'utf-8' },
-      { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: process.env.npm_package_description || 'Meta Description' },
-      { property: 'og:image', content: "https://reachartvisual.com/images/share.png" || '' },
-      { property: 'og:title', content: "Reach Art Visual – visual art consulting company. " },
-      { property: 'og:type', content: "We create conceptual and creative content oriented on thematic essence, the foundation of which is to define art identity. Art Identity is an innovative concept of Reach Art Visual." },
-      { property: 'og:url', content: "https://reachartvisual.com/" }
+    // title: 'Reach art visual',
+    // meta: [
+    //   { charset: 'utf-8' },
+    //   { name: 'viewport', content: 'width=device-width, initial-scale=1' },
+    //   { hid: 'description', name: 'description', content: process.env.npm_package_description || 'Meta Description' },
+    //   { property: 'og:image', content: "https://reachartvisual.com/back_api/backend/web/images/store/Abouts/About1/b53a0c.jpg"' },
+    //   { property: 'og:title', content: "Reach Art Visual – visual art consulting company. " },
+    //   { property: 'og:type', content: "We create conceptual and creative content oriented on thematic essence, the foundation of which is to define art identity. Art Identity is an innovative concept of Reach Art Visual." },
+    //   { property: 'og:url', content: "https://reachartvisual.com/" }
 
 
-    ],
-    link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
-    ]
+    // ],
+    // link: [
+    //   { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+    // ]
   },
   /*
   ** Customize the progress-bar color
@@ -84,6 +84,7 @@ export default {
     // Doc: https://axios.nuxtjs.org/usage
     '@nuxtjs/axios',
     '@nuxtjs/vuetify',
+    'vue-social-sharing/nuxt'
   ],
   /*
   /*

@@ -64,7 +64,7 @@ export default {
 		axios
 			.request({
 				method: "post",
-				url: "https://art.webertela.online/rest/web/index.php?r=v1/faq/list",
+				url: "https://reachartvisual.com/back_api/rest/web/index.php?r=v1/faq/list",
 
 				// data: bodyFormData,
 			})

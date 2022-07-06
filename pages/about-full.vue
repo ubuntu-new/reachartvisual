@@ -7,7 +7,7 @@
 						<h1 class="mb-20"> {{ about.title }} </h1>
 					</span>
 					<p v-html=" about.description">
-						{{ about.description }}
+						<!-- {{ about.description }} -->
 					</p>
 				</div>
 			</div>
@@ -17,7 +17,18 @@
 					<img :src="`https://reachartvisual.com/back_api/backend/web/images/store/${about.filePath}`" />
 				</div>
 			</div>
-
+			<!-- <ShareNetwork
+				network="facebook"
+				url="https://reachartvisual.com/about-full"
+				media="https://reachartvisual.com/back_api/backend/web/images/store/Abouts/About1/b53a0c.jpg"
+				title="Reach Art Visual – visual art consulting company. We create conceptual and creative content oriented on thematic essence, the foundation of which is to define art identity. Art Identity is an innovative concept of Reach Art Visual."
+				description="Reach Art Visual – visual art consulting company. We create conceptual and creative content oriented on thematic essence, the foundation of which is to define art identity. Art Identity is an innovative concept of Reach Art Visual.
+What is the purpose of art in real life and what personal characteristic can it be for us? We discover your art identity with you. With individual or corporate services, together we explore the infinite possibilities of artistic communication, in accordance with your needs and requirements."
+				quote="The hot reload is so fast it\'s near instant. - Evan You"
+				hashtags="reachartvisual"
+			>
+				Share on Facebook
+			</ShareNetwork> -->
 		</div>
 	</div>
 </template>
@@ -27,6 +38,7 @@
 
 <script>
 import axios from "axios";
+
 export default {
 	data: () => ({
 		allABOUT: [],
@@ -34,6 +46,7 @@ export default {
 		aboutHalf1: "",
 		aboutHalf2: "",
 	}),
+
 	mounted() {
 		const TOKEN = "RiG7zh-dadLHoih5AeXXzmEbaXvWbHPS";
 
@@ -44,7 +57,7 @@ export default {
 		axios
 			.request({
 				method: "post",
-				url: "https://art.webertela.online/rest/web/index.php?r=v1/about/list",
+				url: "https://reachartvisual.com/back_api/rest/web/index.php?r=v1/about/list",
 				headers: {
 					Authorization: "Bearer " + TOKEN,
 				},
@@ -72,5 +85,21 @@ export default {
 				this.aboutHalf2 = s.substr(middle + 1);
 			});
 	},
+	
+    head() {
+      return {
+        title: 'Reach Art Visual',
+        meta: [
+          // hid is used as unique identifier. Do not use `vmid` for it as it will not work
+          { hid: 'og-type', property: 'og:type', content: 'website' },
+			 { hid: 'og-title', property: 'og:title', content: 'Reach Art Visual – visual art consulting company. ' },
+			 { hid: 'og-desc', property: 'og:description', content: 'We create conceptual and creative content oriented on thematic essence, the foundation of which is to define art identity. Art Identity is an innovative concept of Reach Art Visual. What is the purpose of art in real life and what personal characteristic can it be for us? We discover your art identity with you. With individual or corporate services, together we explore the infinite possibilities of artistic communication, in accordance with your needs and requirements.' },
+			 { hid: 'og-image', property: 'og:image',
+  content: 'https://reachartvisual.com/back_api/backend/web/images/store/Abouts/About1/b53a0c.jpg'
+},
+{ hid: 'og-url', property: 'og:url', content: 'https://reachartvisual.com/about-full' },
+        ]
+      }
+    }
 };
 </script>

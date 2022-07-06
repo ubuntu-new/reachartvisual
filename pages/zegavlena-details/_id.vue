@@ -18,7 +18,7 @@
                 <div class="col-md-8">
                     <div class="article-content">
 
-                        <h3 class="text-center title-detail mb-85">{{ journal.title }}</h3>
+                        <h3 class="text-center text-h4 font-weight-light orange--text  mb-85">{{ journal.title }}</h3>
                     </div>
                 </div>
                 <div class="col-md-2">&nbsp;</div>
@@ -49,6 +49,7 @@
                                 </div>
                                 <span>
                                     {{ journal.facebook }}
+
                                 </span>
                             </div>
                             <div class="col-md-2">&nbsp;</div>
