@@ -3,7 +3,7 @@
 use yii\helpers\Html;
 use yii\widgets\ActiveForm;
 use dosamigos\ckeditor\CKEditor;
-use mihaildev\elfinder;
+use mihaildev\elfinder\ElFinder;
 use yii\web\View;
 
 /* @var $this yii\web\View */
@@ -11,9 +11,7 @@ use yii\web\View;
 /* @var $form yii\widgets\ActiveForm */
 $img = $model->getImage();
 $img->getPath();
-$_SESSION['KCFINDER'] = array(
-    'disabled' => false
-);
+
 ?>
 
 <div class="about-form">
@@ -34,23 +32,19 @@ $_SESSION['KCFINDER'] = array(
 
 
     <?= $form->field($model, 'description')->widget(CKEditor::className(), [
-        'options' => ['rows' => 8],
-        'clientOptions' =>  elfinder\ElFinder::ckeditorOptions('elfinder',
-            [
-                'language'=>'en', 'title'=>'Paragraph'
-            ]
-        ),
-    ]);?>
+        'options' => ['rows' => 6],
+        'preset' => 'full',
+        'clientOptions' => ElFinder::ckeditorOptions('elfinder', ['language'=> 'en'])
+    ]);
+    ?>
 
 
     <?= $form->field($model, 'description_ge')->widget(CKEditor::className(), [
-        'options' => ['rows' => 8],
-        'clientOptions' =>  elfinder\ElFinder::ckeditorOptions('elfinder',
-            [
-                'language'=>'en', 'title'=>'Paragraph'
-            ]
-        ),
-    ]);?>
+        'options' => ['rows' => 6],
+        'preset' => 'full',
+        'clientOptions' => ElFinder::ckeditorOptions('elfinder', ['language'=> 'en'])
+    ]);
+    ?>
     
     <?= $form->field($model, 'keywords')->textarea(['rows' => 6]) ?>
 

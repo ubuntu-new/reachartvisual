@@ -1,6 +1,8 @@
 <template>
 	<div>
-
+<div class="container">
+    <n-link to="/">Home page</n-link>
+  </div>
 		<section class="blog-details-area mt-90">
 			<div class="container">
 				<div class="row">
@@ -110,6 +112,8 @@ export default {
 			this.$router.push("blog-one");
 		}
 	},
+	props: ['error'],
+   layout: 'default',
 	mounted() {
 		console.log("orderNews: ", this.news);
 	},

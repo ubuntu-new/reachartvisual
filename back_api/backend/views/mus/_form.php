@@ -4,16 +4,14 @@ use yii\helpers\Html;
 use yii\widgets\ActiveForm;
 use yii\web\View;
 use dosamigos\ckeditor\CKEditor;
-use mihaildev\elfinder;
+use mihaildev\elfinder\ElFinder;
 
 /* @var $this yii\web\View */
 /* @var $model backend\models\Mus */
 /* @var $form yii\widgets\ActiveForm */
 $img = $model->getImage();
 $img->getPath();
-$_SESSION['KCFINDER'] = array(
-    'disabled' => false
-);
+
 ?>
 
 <div class="mus-form">
@@ -27,13 +25,11 @@ $_SESSION['KCFINDER'] = array(
     <?= Html::img(Yii::getAlias('@web').'/'.$img->getPath(), ['alt'=>'some', 'class'=>'thing', 'height'=>'150px', 'width'=>'150px'])?>
 
     <?= $form->field($model, 'description')->widget(CKEditor::className(), [
-        'options' => ['rows' => 8],
-        'clientOptions' =>  elfinder\ElFinder::ckeditorOptions('elfinder',
-            [
-                'language'=>'en', 'title'=>'Paragraph'
-            ]
-        ),
-    ]);?>
+        'options' => ['rows' => 6],
+        'preset' => 'full',
+        'clientOptions' => ElFinder::ckeditorOptions('elfinder', ['language'=> 'en'])
+    ]);
+    ?>
 
     <?= $form->field($model, 'site')->textInput(['maxlength' => true]) ?>
 

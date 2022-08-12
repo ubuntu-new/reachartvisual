@@ -86,19 +86,22 @@ class JournalController extends Controller
         if ($model->load(Yii::$app->request->post()) && $model->save()) {
 
             $image =  UploadedFile::getInstance($model , 'image');
-//            $pdf =  UploadedFile::getInstance($model , 'pdf');
+            $pdf = UploadedFile::getInstance($model, 'pdf');
             $model->image =$image;
-            $model->pdf = UploadedFile::getInstance($model , 'pdf');;
+            $model->pdf = $pdf;
+//            var_dump( $model->pdf);
+
             if(!empty($image) && $image->size !== 0) {
                 $model->removeImage( $model->getImage());
             }
             if($model->image){
-                $model->upload();
+               $model->upload();
             }
             if($model->pdf){
                 $model->pdf->saveAs('images/' .$model->pdf->baseName . '.' .$model->pdf->extension) ;
                 $model->pdf = $model->pdf->baseName. '.' .$model->pdf->extension;
             }
+
             return $this->redirect(['view', 'id' => $model->id]);
         }
 

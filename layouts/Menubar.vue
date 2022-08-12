@@ -30,23 +30,23 @@
 										<nuxt-link
 											to="/about-full"
 											class="nav-link"
-										>About Us</nuxt-link>
+										>about Us</nuxt-link>
 									</li>
 									<li class="nav-item p-relative">
 										<nuxt-link
 											to="/zegavlena"
 											class="nav-link"
-										>Zegavlena</nuxt-link>
+										>zegavlena</nuxt-link>
 									</li>
 									<li class="nav-item p-relative">
 										<nuxt-link
 											to="/artists"
 											class="nav-link"
-										>Artists</nuxt-link>
+										>artists</nuxt-link>
 									</li>
 									<li class="nav-item p-relative">
 										<a href="https://vr.ihomepedia.com/70+127/" target="_blank" style="color: #000 !important;">
-										Virtual Exhibision
+										virtual Exhibision
 										</a>
 									</li>
 									<!-- <li class="nav-item p-relative">
@@ -69,7 +69,7 @@
 										<nuxt-link
 											to="/blog-one"
 											class="nav-link"
-										>EVENTS &nbsp; & &nbsp; News </nuxt-link>
+										>EVENTS  &  News </nuxt-link>
 									</li>
 									<!-- <li class="nav-item p-relative">
 										<nuxt-link

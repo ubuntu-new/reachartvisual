@@ -1,20 +1,16 @@
 <?php
-
+use dosamigos\ckeditor\CKEditor;
+use mihaildev\elfinder\ElFinder;
 use yii\helpers\Html;
 use yii\widgets\ActiveForm;
 use yii\web\View;
-use dosamigos\tinymce\TinyMce;
-use dosamigos\ckeditor\CKEditor;
-use mihaildev\elfinder;
 
 /* @var $this yii\web\View */
 /* @var $model backend\models\Artists */
 /* @var $form yii\widgets\ActiveForm */
 $img = $model->getImage();
 $img->getPath();
-$_SESSION['KCFINDER'] = array(
-    'disabled' => false
-);
+
 ?>
 
 <div class="artists-form">
@@ -40,13 +36,11 @@ $_SESSION['KCFINDER'] = array(
     <?= $form->field($model, 'fullname')->textInput(['maxlength' => true]) ?>
 
     <?= $form->field($model, 'description')->widget(CKEditor::className(), [
-        'options' => ['rows' => 8],
-        'clientOptions' =>  elfinder\ElFinder::ckeditorOptions('elfinder',
-            [
-                'language'=>'en', 'title'=>'Paragraph'
-            ]
-        ),
-    ]);?>
+        'options' => ['rows' => 6],
+        'preset' => 'full',
+        'clientOptions' => ElFinder::ckeditorOptions('elfinder', ['language'=> 'en'])
+    ]);
+    ?>
 
     <?= $form->field($model, 'site')->textInput(['maxlength' => true]) ?>
 

@@ -48,7 +48,7 @@ export default {
 	}),
 
 	mounted() {
-		const TOKEN = "RiG7zh-dadLHoih5AeXXzmEbaXvWbHPS";
+		// const TOKEN = "RiG7zh-dadLHoih5AeXXzmEbaXvWbHPS";
 
 		// var bodyFormData = new FormData();
 		// bodyFormData.set("branch", this.branch);
@@ -58,9 +58,9 @@ export default {
 			.request({
 				method: "post",
 				url: "https://reachartvisual.com/back_api/rest/web/index.php?r=v1/about/list",
-				headers: {
-					Authorization: "Bearer " + TOKEN,
-				},
+				// headers: {
+				// 	Authorization: "Bearer " + TOKEN,
+				// },
 
 				// data: bodyFormData,
 			})
@@ -97,7 +97,7 @@ export default {
 			 { hid: 'og-image', property: 'og:image',
   content: 'https://reachartvisual.com/back_api/backend/web/images/store/Abouts/About1/b53a0c.jpg'
 },
-{ hid: 'og-url', property: 'og:url', content: 'https://reachartvisual.com/about-full' },
+{ hid: 'og-url', property: 'og:url', content: 'https://reachartvisual.com/' },
         ]
       }
     }

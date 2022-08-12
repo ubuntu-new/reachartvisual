@@ -15,8 +15,8 @@
 
 					<div
 						class="col-md-3"
-						v-for="artists in allArtists"
-						:key="artists"
+						v-for="(artists, index) in allArtists"
+						:key="index"
 					>
 						<template>
 							<router-link
@@ -96,8 +96,8 @@ export default {
 				// data: bodyFormData,
 			})
 			.then((response) => {
-				console.log("Products Response: ", response);
-				this.allArtists = response.data;w
+				// console.log("Products Response: ", response);
+				this.allArtists = response.data;
 			});
 	},
 };

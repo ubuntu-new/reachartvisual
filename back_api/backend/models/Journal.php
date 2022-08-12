@@ -24,6 +24,7 @@ use yii\web\UploadedFile;
 class Journal extends \yii\db\ActiveRecord
 {
     public $image;
+    public $pdf;
     public $gallery;
     /**
      * {@inheritdoc}
@@ -48,16 +49,16 @@ class Journal extends \yii\db\ActiveRecord
     /**
      * {@inheritdoc}
      */
-    public function rules()
-    {
-        return [
-            [['title'], 'required'],
-            [['title', 'facebook','instagramm','linkendin','status'], 'string'],
-            [['top', 'description', 'metakeyword','img'], 'safe'],
-            [['image'], 'file', 'extensions'=>'jpg, png, gif'],
-            [['pdf'], 'file', 'extensions'=>'pdf'],
-        ];
-    }
+//    public function rules()
+//    {
+//        return [
+//            [['title'], 'required'],
+//            [['title', 'facebook','instagramm','linkendin','status'], 'string'],
+//            [['top', 'description', 'metakeyword','img'], 'safe'],
+//            [['image'], 'file', 'extensions'=>'jpg, png, gif'],
+//            [['pdf'], 'file', 'extensions'=>'pdf'],
+//        ];
+//    }
 
     /**
      * {@inheritdoc}

@@ -49,6 +49,14 @@
                                 <span>
                                     {{ zegavlena.facebook }}
                                 </span>
+                                <nuxt-link
+                                        class="maxLink"
+                                        :to="zegavlena.facebook"
+                                >
+                                    <h3 class="text-h4 font-weight-light orange--text mb-2">
+                                        {{ zegavlena.facebook }}
+                                    </h3>
+                                </nuxt-link>
                             </div>
                             <div class="col-md-2">&nbsp;</div>
                         </div>
@@ -83,6 +91,7 @@ export default {
 
         console.log('orderJournal: ', this.singleJournal);
     },
+    
    //   methods:{
    //    myFunction: function () {   
    //        window.open( this.artists.facebook , "_blank");    

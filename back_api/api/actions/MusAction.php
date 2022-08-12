@@ -15,7 +15,8 @@ class MusAction {
 //               ->all();
 
         $sql = "SELECT {{i}}.*,{{m}}.[[filePath]] FROM {{mus}} {{i}}
-                    LEFT JOIN {{image}} {{m}} ON {{m}}.[[itemId]] = [[i]].[[id]] AND {{m}}.[[modelName]] = 'mus' AND {{m}}.[[isMain]] = '1'";
+                    LEFT JOIN {{image}} {{m}} ON {{m}}.[[itemId]] = {{i}}.[[id]] AND {{m}}.[[modelName]] = 'mus' AND {{m}}.[[isMain]] = '1'
+                    WHERE {{i}}.[[status]] = '1'";
 
         $cmd = \Yii::$app ->db->createCommand($sql)->queryAll(\PDO::FETCH_ASSOC);
         return $cmd;

@@ -7,7 +7,7 @@
                 <div class="col-md-12">
                     <div class="blog-details">
                         <div class="article-img">
-                            <img :src="`https://art.webertela.online/backend/web/images/store/${mus.filePath}`" />
+                            <img :src="`https://reachartvisual.com/back_api/backend/web/images/store/${mus.filePath}`" />
                         </div>
                     </div>
                 </div>

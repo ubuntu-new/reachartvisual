@@ -31,7 +31,7 @@
 										max-width="600"
 									>
 										<img
-											:src="`https://art.webertela.online/backend/web/images/store/${mus.filePath}`"
+											:src="`https://reachartvisual.com/back_api/backend/web/images/store/${mus.filePath}`"
 											class="musImage"
 										/>
 										<!--                                
@@ -103,7 +103,7 @@ export default {
 		axios
 			.request({
 				method: "post",
-				url: "https://art.webertela.online/rest/web/index.php?r=v1/mus/list",
+				url: "https://reachartvisual.com/back_api/rest/web/index.php?r=v1/mus/list",
 
 				// data: bodyFormData,
 			})

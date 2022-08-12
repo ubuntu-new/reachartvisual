@@ -110,6 +110,47 @@ export default {
 			});
       //   console.log('orderJournal: ', this.singleJournal);
     },
+
+  props: {
+    metaTagDetails: {
+      type: Object,
+      required: false,
+      default: () => {},
+    },
+  },
+  head() {
+    return {
+      title: this.journal.title,
+      meta: [
+        { hid: 'og-type', property: 'og:type', content: 'website' },
+        {
+          hid: 'description',
+          name: 'description',
+          content: this.journal.description,
+        },
+        {
+          hid: 'og:title',
+          name: 'og:title',
+          content: this.journal.title,
+        },
+        {
+          hid: 'og:description',
+          property: 'og:description',
+          content: this.journal.description,
+        },
+        { hid: 'og-image', property: 'og:image',
+          content: 'https://reachartvisual.com/back_api/backend/web/images/store/' + this.journal.filePath
+        },
+        { hid: 'og-image:height', property: 'og:image:height',
+          content: '510'},
+        { hid: 'og-image:width', property: 'og:image:width',
+          content: '425'},
+        { hid: 'og-url', property: 'og:url', content: 'https://reachartvisual.com/' + this.$route.fullPath },
+
+      ],
+    }
+  
+}
    //   methods:{
    //    myFunction: function () {   
    //        window.open( this.artists.facebook , "_blank");    

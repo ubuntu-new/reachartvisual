@@ -1,20 +1,18 @@
 <?php
-
-use yii\helpers\Html;
-use yii\widgets\ActiveForm;
-use yii\web\View;
-use dosamigos\tinymce\TinyMce;
 use dosamigos\ckeditor\CKEditor;
-use mihaildev\elfinder;
+use mihaildev\elfinder\ElFinder;
+use yii\helpers\Html;
+use yii\helpers\ArrayHelper;
+use yii\widgets\ActiveForm;
+
+use yii\web\View;
 
 /* @var $this yii\web\View */
 /* @var $model backend\models\Journal */
 /* @var $form yii\widgets\ActiveForm */
 $img = $model->getImage();
 $img->getPath();
-$_SESSION['KCFINDER'] = array(
-    'disabled' => false
-);
+
 ?>
 
 <div class="journal-form">
@@ -45,7 +43,12 @@ $_SESSION['KCFINDER'] = array(
 
     <?= $form->field($model, 'title')->textInput(['maxlength' => true]) ?>
 
-    <?= $form->field($model, 'description')->textarea(['rows' => 6]) ?>
+    <?= $form->field($model, 'description')->widget(CKEditor::className(), [
+        'options' => ['rows' => 6],
+        'preset' => 'full',
+        'clientOptions' => ElFinder::ckeditorOptions('elfinder', ['language'=> 'en'])
+    ]);
+    ?>
 
     <?= $form->field($model, 'facebook')->textInput(['maxlength' => true]) ?>
 

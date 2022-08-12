@@ -35,11 +35,11 @@
 							<h3 class="blogtitle">{{ news.title }}</h3>
 							<p
 								class="text"
-								v-html="news.description"
+								v-html="news.short_description"
 							>
 								&nbsp;
 							</p>
-							<p>&nbsp;</p>
+							<p> </p>
 							</router-link>
 							<ul class="list-inline justify-content-center exploreMore">
 								<li class="list-inline-item"><img
@@ -110,7 +110,7 @@ export default {
 	},
 	mounted() {
 		const lang = this.$store.getters.language;
-		const TOKEN = "RiG7zh-dadLHoih5AeXXzmEbaXvWbHPS";
+		// const TOKEN = "RiG7zh-dadLHoih5AeXXzmEbaXvWbHPS";
 
 		// var bodyFormData = new FormData();
 		// bodyFormData.set("branch", this.branch);
@@ -120,29 +120,30 @@ export default {
 			.request({
 				method: "post",
 				url: "https://reachartvisual.com/back_api/rest/web/index.php?r=v1/news/list",
-				headers: {
-					Authorization: "Bearer " + TOKEN,
-				},
+				// headers: {
+				// 	Authorization: "Bearer " + TOKEN,
+				// },
 				// data: bodyFormData,
 			})
 			.then((response) => {
-				if (lang == "ka") {
-					console.log("Catogeries Response: ", response);
-					this.allNews = response.data;
-					this.allNews.forEach((x) => {
-						(x.title_en = x.title),
-						(x.title = x.title_ge),
-						(x.description_en = x.description),
-						(x.description = x.description_ge);
-					});
-					this.featuredNews = this.allNews.filter((x) => x.feautured == "1");
-					console.log("featured: ", this.featuredNews);
-				} else {
-					console.log("Catogeries Response: ", response);
-					this.allNews = response.data;
-					this.featuredNews = this.allNews.filter((x) => x.feautured == "1");
-					console.log("featured: ", this.featuredNews);
-				}
+				this.allNews = response.data;
+				// if (lang == "ka") {
+				// 	console.log("Catogeries Response: ", response);
+				// 	this.allNews = response.data;
+				// 	this.allNews.forEach((x) => {
+				// 		(x.title_en = x.title),
+				// 		(x.title = x.title_ge),
+				// 		(x.description_en = x.description),
+				// 		(x.description = x.description_ge);
+				// 	});
+				// 	this.featuredNews = this.allNews.filter((x) => x.feautured == "1");
+				// 	console.log("featured: ", this.featuredNews);
+				// } else {
+				// 	console.log("Catogeries Response: ", response);
+				// 	this.allNews = response.data;
+				// 	this.featuredNews = this.allNews.filter((x) => x.feautured == "1");
+				// 	console.log("featured: ", this.featuredNews);
+				// }
 			});
 	},
 	methods: {

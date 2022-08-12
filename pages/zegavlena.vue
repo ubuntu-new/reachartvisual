@@ -20,8 +20,8 @@
 					</div>
 					<div
 						class="col-md-3"
-						v-for="journal in allJournal"
-						:key="journal"
+						v-for="(journal, index) in allJournal"
+						:key="index"
 					>
 
 						<template>
@@ -94,7 +94,7 @@ export default {
 		readonly: false,
 	}),
 	mounted() {
-		const TOKEN = "RiG7zh-dadLHoih5AeXXzmEbaXvWbHPS";
+		// const TOKEN = "RiG7zh-dadLHoih5AeXXzmEbaXvWbHPS";
 
 		// var bodyFormData = new FormData();
 		// bodyFormData.set("branch", this.branch);
@@ -104,9 +104,9 @@ export default {
 			.request({
 				method: "post",
 				url: "https://reachartvisual.com/back_api/rest/web/index.php?r=v1/journal/list",
-				headers: {
-					Authorization: "Bearer " + TOKEN,
-				},
+				// headers: {
+				// 	Authorization: "Bearer " + TOKEN,
+				// },
 				// data: bodyFormData,
 			})
 			.then((response) => {
@@ -114,5 +114,20 @@ export default {
 				this.allJournal = response.data;
 			});
 	},
+	head() {
+      return {
+        title: 'RAV: ZEGAVLENA',
+        meta: [
+          // hid is used as unique identifier. Do not use `vmid` for it as it will not work
+          { hid: 'og-type', property: 'og:type', content: 'website' },
+			 { hid: 'og-title', property: 'og:title', content: 'Reach Art Visual – ZEGAVLENA. ' },
+			 { hid: 'og-desc', property: 'og:description', content: 'nfluence (“ზეგავლენა” in Georgian) is a monthly online publication that introduces the dynamics of contemporary Georgian art and current cultural processes to a wide range of readers. Our concept is based on getting Georgian contemporary artists known, finding connections from art history, and discovering interesting and unknown visual materials through the thematic sections. Readers of the online edition will get inspiration for interior design through interviews, review blogs, high-quality exclusive design, and also get acquainted with the Georgian art reality from different angles. “Influence” - the name of the publication, is the name of Tea Nili’s concept book.' },
+			 { hid: 'og-image', property: 'og:image',
+  content: 'https://reachartvisual.com/back_api/backend/web/images/store/Abouts/About1/b53a0c.jpg'
+},
+{ hid: 'og-url', property: 'og:url', content: 'https://reachartvisual.com/about-full' },
+        ]
+      }
+    }
 };
 </script>

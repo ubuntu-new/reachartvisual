@@ -16,8 +16,9 @@ class NewsResponse
         $description_ge,
         $metakeyword,
         $metakeyword_ge,
-//        $isMain,
+        $short_description,
         $image;
+    //        $isMain,
 
 
 
@@ -31,6 +32,7 @@ class NewsResponse
         $this->description_ge = $row['description_ge'];
         $this->metakeyword = $row["metakeyword"];
         $this->metakeyword_ge = $row["metakeyword_ge"];
+        $this->short_description = $row["short_description"];
         $this->image =  NewsAction::getImages($row['id']);
 //        $this->isMain =  NewsAction::getImages($row['isMain']);
     }
