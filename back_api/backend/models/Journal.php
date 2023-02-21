@@ -17,14 +17,13 @@ use yii\web\UploadedFile;
  * @property string|null $metakeyword
  * @property string|null $status
  * @property string|null $top
- * @property string|null $pdf
  * @property string|null $file
+ * @property string|null $pdf
  * @property string|null $img
  */
 class Journal extends \yii\db\ActiveRecord
 {
     public $image;
-    public $pdf;
     public $gallery;
     /**
      * {@inheritdoc}
@@ -49,16 +48,15 @@ class Journal extends \yii\db\ActiveRecord
     /**
      * {@inheritdoc}
      */
-//    public function rules()
-//    {
-//        return [
-//            [['title'], 'required'],
-//            [['title', 'facebook','instagramm','linkendin','status'], 'string'],
-//            [['top', 'description', 'metakeyword','img'], 'safe'],
-//            [['image'], 'file', 'extensions'=>'jpg, png, gif'],
-//            [['pdf'], 'file', 'extensions'=>'pdf'],
-//        ];
-//    }
+    public function rules()
+    {
+        return [
+            [['title','description'], 'required'],
+            [['title', 'facebook','instagramm','linkendin','status','pdf'], 'string'],
+            [['top', 'description', 'metakeyword','img'], 'safe'],
+            [['image'], 'file', 'extensions'=>'jpg, png, gif'],
+        ];
+    }
 
     /**
      * {@inheritdoc}
@@ -75,8 +73,7 @@ class Journal extends \yii\db\ActiveRecord
             'metakeyword' => Yii::t('app', 'Metakeyword'),
             'status' => Yii::t('app', 'Status'),
             'top' => Yii::t('app', 'Top'),
-            'pdf' => Yii::t('app', 'Journal PDF Version'),
-            'img' => Yii::t('app', 'Cover image'),
+            'pdf' => Yii::t('app', 'Journal PDF URL'),
             'image' => 'Image',
         ];
     }
@@ -89,20 +86,6 @@ class Journal extends \yii\db\ActiveRecord
             $this->image->saveAs($path);
             $this->attachImage($path);
             @unlink($path);
-            return true;
-        }else{
-            return false;
-        }
-    }
-
-
-
-    public function uploadfile(){
-        if($this->validate()){
-            $path2 = 'images/'. $this->pdf->baseName . '.' . $this->pdf->extension;
-            $this->pdf->saveAs($path2);
-            $this->attachFile($path2);
-            @unlink($path2);
             return true;
         }else{
             return false;

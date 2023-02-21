@@ -2,7 +2,7 @@
 
 namespace backend\models;
 
-use rico\yii2images\models\Image;
+//use rico\yii2images\models\Image;
 use Yii;
 
 /**

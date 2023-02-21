@@ -47,7 +47,7 @@ class Mus extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['description', 'metakeyword', 'status', 'top'], 'string'],
+            [['description', 'metakeyword', 'status'], 'string'],
             [['fullname', 'site', 'facebook', 'instagramm', 'linkendin'], 'string', 'max' => 255],
             [['image'], 'file', 'extensions' => 'png, jpg'],
         ];

@@ -15,6 +15,7 @@ class JournalResponse
         $status,
         $top,
         $file,
+        $pdf,
         $image;
 
 
@@ -30,6 +31,7 @@ class JournalResponse
         $this->status = $row['status'];
         $this->top = $row['top'];
         $this->file = $row['file'];
+        $this->pdf = $row['pdf'];
         $this->image = $row['image'];
     }
 

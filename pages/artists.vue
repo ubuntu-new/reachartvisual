@@ -6,7 +6,7 @@
 					<div class="col-12 mt-60  mb-30">
 						<span class="about-us ">
 							<h1 class="mb-20">
-								Artists
+								Books
 							</h1>
 						</span>
 					</div>

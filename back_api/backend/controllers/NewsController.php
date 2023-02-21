@@ -126,6 +126,8 @@ class NewsController extends Controller
             'model' => $model,
         ]);
     }
+
+
     public function actionUpdate($id)
     {
         $model = $this->findModel($id);
@@ -134,9 +136,9 @@ class NewsController extends Controller
 
             $image =  UploadedFile::getInstance($model , 'image');
             $model->image =$image;
-//            if(!empty($image) && $image->size !== 0) {
-//                $model->removeImage( $model->getImage());
-//            }
+            if(!empty($image) && $image->size !== 0) {
+                $model->removeImage( $model->getImage());
+            }
 
             if($model->image){
                 $model->upload();

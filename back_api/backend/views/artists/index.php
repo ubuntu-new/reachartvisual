@@ -30,10 +30,10 @@ $this->params['breadcrumbs'][] = $this->title;
             'fullname',
             'site',
             'facebook',
-            //'instagramm',
-            //'linkendin',
+            'instagramm',
+            'linkendin',
             //'metakeyword:ntext',
-            //'status',
+            'status',
 
             ['class' => 'yii\grid\ActionColumn'],
         ],

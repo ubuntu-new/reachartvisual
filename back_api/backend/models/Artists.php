@@ -47,7 +47,7 @@ class Artists extends \yii\db\ActiveRecord
     {
         return [
             [['description', 'metakeyword', 'status'], 'string'],
-            [['fullname', 'site', 'facebook', 'instagramm', 'linkendin'], 'string', 'max' => 255],
+            [['fullname', 'site', 'facebook', 'instagramm'], 'string', 'max' => 255],
             [['image'], 'file', 'extensions' => 'png, jpg'],
         ];
     }

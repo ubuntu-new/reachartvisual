@@ -86,20 +86,13 @@ class JournalController extends Controller
         if ($model->load(Yii::$app->request->post()) && $model->save()) {
 
             $image =  UploadedFile::getInstance($model , 'image');
-            $pdf = UploadedFile::getInstance($model, 'pdf');
             $model->image =$image;
-            $model->pdf = $pdf;
-//            var_dump( $model->pdf);
-
             if(!empty($image) && $image->size !== 0) {
                 $model->removeImage( $model->getImage());
             }
+
             if($model->image){
-               $model->upload();
-            }
-            if($model->pdf){
-                $model->pdf->saveAs('images/' .$model->pdf->baseName . '.' .$model->pdf->extension) ;
-                $model->pdf = $model->pdf->baseName. '.' .$model->pdf->extension;
+                $model->upload();
             }
 
             return $this->redirect(['view', 'id' => $model->id]);
@@ -108,25 +101,6 @@ class JournalController extends Controller
         return $this->render('create', [
             'model' => $model,
         ]);
-
-
-
-
-/*
-        if ($model->load(Yii::$app->request->post())) {
-            $model->image = UploadedFile::getInstance($model, 'image');
-                $model->image->saveAs('images/' .$model->image->baseName . '.' .$model->image->extension) ;
-                $model->image = $model->image->baseName. '.' .$model->image->extension;
-            $model->pdf = UploadedFile::getInstance($model, 'pdf');
-                $model->pdf->saveAs('images/' .$model->pdf->baseName . '.' .$model->pdf->extension) ;
-                $model->pdf = $model->pdf->baseName. '.' .$model->pdf->extension;
-            if ($model->save()) {
-                return $this->redirect(['view', 'id' => $model->id]);
-            }
-        }
-        return $this->render('create', [
-            'model' => $model,
-        ]);*/
     }
 
     /**
@@ -136,15 +110,15 @@ class JournalController extends Controller
      * @return mixed
      * @throws NotFoundHttpException if the model cannot be found
      */
+
     public function actionUpdate($id)
     {
         $model = $this->findModel($id);
 
         if ($model->load(Yii::$app->request->post()) && $model->save()) {
+
             $image =  UploadedFile::getInstance($model , 'image');
-            $pdf =  UploadedFile::getInstance($model , 'pdf');
-            $model -> image = $image;
-            $model -> pdf = $pdf;
+            $model->image =$image;
             if(!empty($image) && $image->size !== 0) {
                 $model->removeImage( $model->getImage());
             }
@@ -152,41 +126,14 @@ class JournalController extends Controller
             if($model->image){
                 $model->upload();
             }
-            if($model->pdf){
-//                $model->uploadfile();
-                    $model->pdf->saveAs('images/' .$model->pdf->baseName . '.' .$model->pdf->extension) ;
-                    $model->pdf = $model->pdf->baseName. '.' .$model->pdf->extension;
-
-
-            }
             return $this->redirect(['view', 'id' => $model->id]);
         }
-            return $this->render('update', [
-                'model' => $model,
-            ]);
-        }
-//    public function actionUpdate($id)
-//    {
-//        $model = $this->findModel($id);
-//
-//        if ($model->load(Yii::$app->request->post()) && $model->save()) {
-//
-//            $image = UploadedFile::getInstance($model, 'image');
-//            $model->image = $image;
-//            if (!empty($image) && $image->size !== 0) {
-//                $model->removeImage($model->getImage());
-//            }
-//
-//            if ($model->image) {
-//                $model->upload();
-//            }
-//            return $this->redirect(['view', 'id' => $model->id]);
-//        }
-//
-//        return $this->render('update', [
-//            'model' => $model,
-//        ]);
-//    }
+
+        return $this->render('update', [
+            'model' => $model,
+        ]);
+
+  }
 
     /**
      * Deletes an existing Journal model.
@@ -197,7 +144,10 @@ class JournalController extends Controller
      */
     public function actionDelete($id)
     {
-        $this->findModel($id)->delete();
+        //$this->findModel($id)->delete();
+        $model = $this->findModel($id);
+        $model->removeImage( $model->getImage());
+        $model->delete();
 
         return $this->redirect(['index']);
     }

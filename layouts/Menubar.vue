@@ -42,11 +42,11 @@
 										<nuxt-link
 											to="/artists"
 											class="nav-link"
-										>artists</nuxt-link>
+										>Books</nuxt-link>
 									</li>
 									<li class="nav-item p-relative">
 										<a href="https://vr.ihomepedia.com/70+127/" target="_blank" style="color: #000 !important;">
-										virtual Exhibision
+										virtual Exhibition
 										</a>
 									</li>
 									<!-- <li class="nav-item p-relative">

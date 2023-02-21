@@ -37,8 +37,8 @@
                                         &nbsp;
                                     </p>
                                     <ul class="shareUl">
-                                        <li class="shareLi" v-if="artists.facebook "><img src="../assets/img/facebook.svg" class="facebook" @click="myFunction()"></li>
-                                        <li class="shareLi" v-if="artists.instagramm"><img src="../assets/img/linkedin-1.svg" class="facebook" @click="myFunctionOne()"></li>
+                                        <li class="shareLi" v-if="artists.facebook "><img src="../assets/img/facebook.png" class="facebook" @click="myFunction()"></li>
+                                        <li class="shareLi" v-if="artists.instagramm"><img src="../assets/img/instagram.png" class="facebook" @click="myFunctionOne()"></li>
                                         <!-- <li class="shareLi"><img src="../assets/img/path.svg" class="facebook"></li> -->
                                     </ul>
                                 </div>

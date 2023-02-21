@@ -31,26 +31,22 @@
 
                     <div class="container">
                         <div class="row">
-                            <!-- <div class="col-md-2">
+                            <div class="col-md-2">
                                 <div class="share text-center">
                                     <p>Share</p>
                                     <p class="xazi">
                                         &nbsp;
                                     </p>
                                     <ul class="shareUl">
-                                        <li class="shareLi"><img src="../assets/img/facebook.svg" class="facebook" @click="myFunction()"></li>
-                                        <li class="shareLi"><img src="../assets/img/linkedin-1.svg" class="facebook"></li>
-                                        <li class="shareLi"><img src="../assets/img/path.svg" class="facebook"></li>
+                                        <li class="shareLi" v-if="journal.facebook "><img src="~/assets/img/facebook.png" class="facebook" @click="myFunction()"></li>
+                                        <li class="shareLi" v-if="journal.instagramm"><img src="~/assets/img/instagram.png" class="facebook" @click="myFunctionOne()"></li>
+                                        <!-- <li class="shareLi"><img src="../assets/img/path.svg" class="facebook"></li> -->
                                     </ul>
                                 </div>
-                            </div> -->
-                            <div class="col-md-12 ">
+                            </div>
+                            <div class="col-md-10 ">
                                 <div class="blog-details" v-html="journal.description">
                                 </div>
-                                <span>
-                                    {{ journal.facebook }}
-
-                                </span>
                             </div>
                             <div class="col-md-2">&nbsp;</div>
                         </div>
@@ -70,7 +66,7 @@ export default {
         return {
 			   id: this.$route.params.id,
             journal: {},
-				journalList: [],
+				    journalList: [],
         }
     },
 	 
@@ -150,11 +146,14 @@ export default {
       ],
     }
   
-}
-   //   methods:{
-   //    myFunction: function () {   
-   //        window.open( this.artists.facebook , "_blank");    
-   //    },
-   //  }
+},
+methods:{
+      myFunction: function () {   
+          window.open( this.journal.facebook , "_blank");    
+      },
+      myFunctionOne: function () {   
+          window.open( this.journal.instagramm , "_blank");    
+      },
+    }
 }
 </script>

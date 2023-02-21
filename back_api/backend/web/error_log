@@ -1,0 +1,756 @@
+[17-Feb-2023 09:32:04 UTC] An Error occurred while handling another error:
+yii\web\HeadersAlreadySentException: Headers already sent in /home/reachart/public_html/back_api/vendor/costa-rico/yii2-images/controllers/ImagesController.php on line 56. in /home/reachart/public_html/back_api/vendor/yiisoft/yii2/web/Response.php:368
+Stack trace:
+#0 /home/reachart/public_html/back_api/vendor/yiisoft/yii2/web/Response.php(341): yii\web\Response->sendHeaders()
+#1 /home/reachart/public_html/back_api/vendor/yiisoft/yii2/web/ErrorHandler.php(136): yii\web\Response->send()
+#2 /home/reachart/public_html/back_api/vendor/yiisoft/yii2/base/ErrorHandler.php(135): yii\web\ErrorHandler->renderException(Object(yii\web\HeadersAlreadySentException))
+#3 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\web\HeadersAlreadySentException))
+#4 {main}
+Previous exception:
+yii\web\HeadersAlreadySentException: Headers already sent in /home/reachart/public_html/back_api/vendor/costa-rico/yii2-images/controllers/ImagesController.php on line 56. in /home/reachart/public_html/back_api/vendor/yiisoft/yii2/web/Response.php:368
+Stack trace:
+#0 /home/reachart/public_html/back_api/vendor/yiisoft/yii2/web/Response.php(341): yii\web\Response->sendHeaders()
+#1 /home/reachart/public_html/back_api/vendor/yiisoft/yii2/base/Application.php(390): yii\web\Response->send()
+#2 /home/reachart/public_html/back_api/backend/web/index.php(17): yii\base\Application->run()
+#3 {main}
+$_SERVER = [
+    'TZ' => 'Asia/Tbilisi',
+    'REDIRECT_REDIRECT_UNIQUE_ID' => 'Y-9Jk6JSLJSrRshr_wCyKQAAAAY',
+    'REDIRECT_REDIRECT_SCRIPT_URL' => '/back_api/backend/web/yii2images/images/image-by-item-and-alias',
+    'REDIRECT_REDIRECT_SCRIPT_URI' => 'https://reachartvisual.com/back_api/backend/web/yii2images/images/image-by-item-and-alias',
+    'REDIRECT_REDIRECT_HTTPS' => 'on',
+    'REDIRECT_REDIRECT_SSL_TLS_SNI' => 'reachartvisual.com',
+    'REDIRECT_REDIRECT_STATUS' => '200',
+    'REDIRECT_UNIQUE_ID' => 'Y-9Jk6JSLJSrRshr_wCyKQAAAAY',
+    'REDIRECT_SCRIPT_URL' => '/back_api/backend/web/yii2images/images/image-by-item-and-alias',
+    'REDIRECT_SCRIPT_URI' => 'https://reachartvisual.com/back_api/backend/web/yii2images/images/image-by-item-and-alias',
+    'REDIRECT_HTTPS' => 'on',
+    'REDIRECT_SSL_TLS_SNI' => 'reachartvisual.com',
+    'REDIRECT_HANDLER' => 'application/x-httpd-ea-php74',
+    'REDIRECT_STATUS' => '200',
+    'UNIQUE_ID' => 'Y-9Jk6JSLJSrRshr_wCyKQAAAAY',
+    'SCRIPT_URL' => '/back_api/backend/web/yii2images/images/image-by-item-and-alias',
+    'SCRIPT_URI' => 'https://reachartvisual.com/back_api/backend/web/yii2images/images/image-by-item-and-alias',
+    'HTTPS' => 'on',
+    'SSL_TLS_SNI' => 'reachartvisual.com',
+    'HTTP_HOST' => 'reachartvisual.com',
+    'HTTP_CONNECTION' => 'keep-alive',
+    'HTTP_SEC_CH_UA' => '"Not_A Brand";v="99", "Google Chrome";v="109", "Chromium";v="109"',
+    'HTTP_SEC_CH_UA_MOBILE' => '?0',
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36',
+    'HTTP_SEC_CH_UA_PLATFORM' => '"Windows"',
+    'HTTP_ACCEPT' => 'image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8',
+    'HTTP_SEC_FETCH_SITE' => 'same-origin',
+    'HTTP_SEC_FETCH_MODE' => 'no-cors',
+    'HTTP_SEC_FETCH_DEST' => 'image',
+    'HTTP_REFERER' => 'https://reachartvisual.com/back_api/backend/web/journal/update?id=273',
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br',
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9',
+    'HTTP_COOKIE' => 'advanced-backend=06f5a0b1d4473d707aef2f79907c6fd1',
+    'HTTP_X_HTTPS' => '1',
+    'PATH' => '/usr/local/jdk/bin:/usr/kerberos/sbin:/usr/kerberos/bin:/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin:/usr/X11R6/bin:/usr/local/bin:/usr/X11R6/bin:/root/bin:/opt/bin',
+    'SERVER_SIGNATURE' => '',
+    'SERVER_SOFTWARE' => 'Apache',
+    'SERVER_NAME' => 'reachartvisual.com',
+    'SERVER_ADDR' => '91.239.207.130',
+    'SERVER_PORT' => '443',
+    'REMOTE_ADDR' => '176.221.239.92',
+    'DOCUMENT_ROOT' => '/home/reachart/public_html',
+    'REQUEST_SCHEME' => 'https',
+    'CONTEXT_PREFIX' => '/cgi-sys',
+    'CONTEXT_DOCUMENT_ROOT' => '/usr/local/cpanel/cgi-sys/',
+    'SERVER_ADMIN' => 'webmaster@reachartvisual.com',
+    'SCRIPT_FILENAME' => '/home/reachart/public_html/back_api/backend/web/index.php',
+    'REMOTE_PORT' => '59830',
+    'REDIRECT_URL' => '/back_api/backend/web/index.php',
+    'REDIRECT_QUERY_STRING' => 'item=Journal273&dirtyAlias=ed741760dd-1_150x.jpg',
+    'GATEWAY_INTERFACE' => 'CGI/1.1',
+    'SERVER_PROTOCOL' => 'HTTP/1.1',
+    'REQUEST_METHOD' => 'GET',
+    'QUERY_STRING' => 'item=Journal273&dirtyAlias=ed741760dd-1_150x.jpg',
+    'REQUEST_URI' => '/back_api/backend/web/yii2images/images/image-by-item-and-alias?item=Journal273&dirtyAlias=ed741760dd-1_150x.jpg',
+    'SCRIPT_NAME' => '/back_api/backend/web/index.php',
+    'ORIG_SCRIPT_FILENAME' => '/usr/local/cpanel/cgi-sys/ea-php74',
+    'ORIG_PATH_INFO' => '/back_api/backend/web/index.php',
+    'ORIG_PATH_TRANSLATED' => '/home/reachart/public_html/back_api/backend/web/index.php',
+    'ORIG_SCRIPT_NAME' => '/cgi-sys/ea-php74',
+    'PHP_SELF' => '/back_api/backend/web/index.php',
+    'REQUEST_TIME_FLOAT' => 1676626323.9394109249114990234375,
+    'REQUEST_TIME' => 1676626323,
+    'argv' => [
+        'item=Journal273&dirtyAlias=ed741760dd-1_150x.jpg',
+    ],
+    'argc' => 1,
+]
+[17-Feb-2023 09:33:36 UTC] An Error occurred while handling another error:
+yii\web\HeadersAlreadySentException: Headers already sent in /home/reachart/public_html/back_api/vendor/costa-rico/yii2-images/controllers/ImagesController.php on line 56. in /home/reachart/public_html/back_api/vendor/yiisoft/yii2/web/Response.php:368
+Stack trace:
+#0 /home/reachart/public_html/back_api/vendor/yiisoft/yii2/web/Response.php(341): yii\web\Response->sendHeaders()
+#1 /home/reachart/public_html/back_api/vendor/yiisoft/yii2/web/ErrorHandler.php(136): yii\web\Response->send()
+#2 /home/reachart/public_html/back_api/vendor/yiisoft/yii2/base/ErrorHandler.php(135): yii\web\ErrorHandler->renderException(Object(yii\web\HeadersAlreadySentException))
+#3 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\web\HeadersAlreadySentException))
+#4 {main}
+Previous exception:
+yii\web\HeadersAlreadySentException: Headers already sent in /home/reachart/public_html/back_api/vendor/costa-rico/yii2-images/controllers/ImagesController.php on line 56. in /home/reachart/public_html/back_api/vendor/yiisoft/yii2/web/Response.php:368
+Stack trace:
+#0 /home/reachart/public_html/back_api/vendor/yiisoft/yii2/web/Response.php(341): yii\web\Response->sendHeaders()
+#1 /home/reachart/public_html/back_api/vendor/yiisoft/yii2/base/Application.php(390): yii\web\Response->send()
+#2 /home/reachart/public_html/back_api/backend/web/index.php(17): yii\base\Application->run()
+#3 {main}
+$_SERVER = [
+    'TZ' => 'Asia/Tbilisi',
+    'REDIRECT_REDIRECT_UNIQUE_ID' => 'Y-9J7_KSPPol7KHnrgYNDgAAAB0',
+    'REDIRECT_REDIRECT_SCRIPT_URL' => '/back_api/backend/web/yii2images/images/image-by-item-and-alias',
+    'REDIRECT_REDIRECT_SCRIPT_URI' => 'https://reachartvisual.com/back_api/backend/web/yii2images/images/image-by-item-and-alias',
+    'REDIRECT_REDIRECT_HTTPS' => 'on',
+    'REDIRECT_REDIRECT_SSL_TLS_SNI' => 'reachartvisual.com',
+    'REDIRECT_REDIRECT_STATUS' => '200',
+    'REDIRECT_UNIQUE_ID' => 'Y-9J7_KSPPol7KHnrgYNDgAAAB0',
+    'REDIRECT_SCRIPT_URL' => '/back_api/backend/web/yii2images/images/image-by-item-and-alias',
+    'REDIRECT_SCRIPT_URI' => 'https://reachartvisual.com/back_api/backend/web/yii2images/images/image-by-item-and-alias',
+    'REDIRECT_HTTPS' => 'on',
+    'REDIRECT_SSL_TLS_SNI' => 'reachartvisual.com',
+    'REDIRECT_HANDLER' => 'application/x-httpd-ea-php74',
+    'REDIRECT_STATUS' => '200',
+    'UNIQUE_ID' => 'Y-9J7_KSPPol7KHnrgYNDgAAAB0',
+    'SCRIPT_URL' => '/back_api/backend/web/yii2images/images/image-by-item-and-alias',
+    'SCRIPT_URI' => 'https://reachartvisual.com/back_api/backend/web/yii2images/images/image-by-item-and-alias',
+    'HTTPS' => 'on',
+    'SSL_TLS_SNI' => 'reachartvisual.com',
+    'HTTP_HOST' => 'reachartvisual.com',
+    'HTTP_CONNECTION' => 'keep-alive',
+    'HTTP_SEC_CH_UA' => '"Not_A Brand";v="99", "Google Chrome";v="109", "Chromium";v="109"',
+    'HTTP_SEC_CH_UA_MOBILE' => '?0',
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36',
+    'HTTP_SEC_CH_UA_PLATFORM' => '"Windows"',
+    'HTTP_ACCEPT' => 'image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8',
+    'HTTP_SEC_FETCH_SITE' => 'same-origin',
+    'HTTP_SEC_FETCH_MODE' => 'no-cors',
+    'HTTP_SEC_FETCH_DEST' => 'image',
+    'HTTP_REFERER' => 'https://reachartvisual.com/back_api/backend/web/journal/update?id=275',
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br',
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9',
+    'HTTP_COOKIE' => 'advanced-backend=06f5a0b1d4473d707aef2f79907c6fd1',
+    'HTTP_X_HTTPS' => '1',
+    'PATH' => '/usr/local/jdk/bin:/usr/kerberos/sbin:/usr/kerberos/bin:/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin:/usr/X11R6/bin:/usr/local/bin:/usr/X11R6/bin:/root/bin:/opt/bin',
+    'SERVER_SIGNATURE' => '',
+    'SERVER_SOFTWARE' => 'Apache',
+    'SERVER_NAME' => 'reachartvisual.com',
+    'SERVER_ADDR' => '91.239.207.130',
+    'SERVER_PORT' => '443',
+    'REMOTE_ADDR' => '176.221.239.92',
+    'DOCUMENT_ROOT' => '/home/reachart/public_html',
+    'REQUEST_SCHEME' => 'https',
+    'CONTEXT_PREFIX' => '/cgi-sys',
+    'CONTEXT_DOCUMENT_ROOT' => '/usr/local/cpanel/cgi-sys/',
+    'SERVER_ADMIN' => 'webmaster@reachartvisual.com',
+    'SCRIPT_FILENAME' => '/home/reachart/public_html/back_api/backend/web/index.php',
+    'REMOTE_PORT' => '59930',
+    'REDIRECT_URL' => '/back_api/backend/web/index.php',
+    'REDIRECT_QUERY_STRING' => 'item=Journal275&dirtyAlias=b9286e5319-1_150x.jpg',
+    'GATEWAY_INTERFACE' => 'CGI/1.1',
+    'SERVER_PROTOCOL' => 'HTTP/1.1',
+    'REQUEST_METHOD' => 'GET',
+    'QUERY_STRING' => 'item=Journal275&dirtyAlias=b9286e5319-1_150x.jpg',
+    'REQUEST_URI' => '/back_api/backend/web/yii2images/images/image-by-item-and-alias?item=Journal275&dirtyAlias=b9286e5319-1_150x.jpg',
+    'SCRIPT_NAME' => '/back_api/backend/web/index.php',
+    'ORIG_SCRIPT_FILENAME' => '/usr/local/cpanel/cgi-sys/ea-php74',
+    'ORIG_PATH_INFO' => '/back_api/backend/web/index.php',
+    'ORIG_PATH_TRANSLATED' => '/home/reachart/public_html/back_api/backend/web/index.php',
+    'ORIG_SCRIPT_NAME' => '/cgi-sys/ea-php74',
+    'PHP_SELF' => '/back_api/backend/web/index.php',
+    'REQUEST_TIME_FLOAT' => 1676626415.8876440525054931640625,
+    'REQUEST_TIME' => 1676626415,
+    'argv' => [
+        'item=Journal275&dirtyAlias=b9286e5319-1_150x.jpg',
+    ],
+    'argc' => 1,
+]
+[17-Feb-2023 09:46:16 UTC] An Error occurred while handling another error:
+yii\web\HeadersAlreadySentException: Headers already sent in /home/reachart/public_html/back_api/vendor/costa-rico/yii2-images/controllers/ImagesController.php on line 56. in /home/reachart/public_html/back_api/vendor/yiisoft/yii2/web/Response.php:368
+Stack trace:
+#0 /home/reachart/public_html/back_api/vendor/yiisoft/yii2/web/Response.php(341): yii\web\Response->sendHeaders()
+#1 /home/reachart/public_html/back_api/vendor/yiisoft/yii2/web/ErrorHandler.php(136): yii\web\Response->send()
+#2 /home/reachart/public_html/back_api/vendor/yiisoft/yii2/base/ErrorHandler.php(135): yii\web\ErrorHandler->renderException(Object(yii\web\HeadersAlreadySentException))
+#3 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\web\HeadersAlreadySentException))
+#4 {main}
+Previous exception:
+yii\web\HeadersAlreadySentException: Headers already sent in /home/reachart/public_html/back_api/vendor/costa-rico/yii2-images/controllers/ImagesController.php on line 56. in /home/reachart/public_html/back_api/vendor/yiisoft/yii2/web/Response.php:368
+Stack trace:
+#0 /home/reachart/public_html/back_api/vendor/yiisoft/yii2/web/Response.php(341): yii\web\Response->sendHeaders()
+#1 /home/reachart/public_html/back_api/vendor/yiisoft/yii2/base/Application.php(390): yii\web\Response->send()
+#2 /home/reachart/public_html/back_api/backend/web/index.php(17): yii\base\Application->run()
+#3 {main}
+$_SERVER = [
+    'TZ' => 'Asia/Tbilisi',
+    'REDIRECT_REDIRECT_UNIQUE_ID' => 'Y-9M6I2wDisqNvK8DPUOygAAAAY',
+    'REDIRECT_REDIRECT_SCRIPT_URL' => '/back_api/backend/web/yii2images/images/image-by-item-and-alias',
+    'REDIRECT_REDIRECT_SCRIPT_URI' => 'https://reachartvisual.com/back_api/backend/web/yii2images/images/image-by-item-and-alias',
+    'REDIRECT_REDIRECT_HTTPS' => 'on',
+    'REDIRECT_REDIRECT_SSL_TLS_SNI' => 'reachartvisual.com',
+    'REDIRECT_REDIRECT_STATUS' => '200',
+    'REDIRECT_UNIQUE_ID' => 'Y-9M6I2wDisqNvK8DPUOygAAAAY',
+    'REDIRECT_SCRIPT_URL' => '/back_api/backend/web/yii2images/images/image-by-item-and-alias',
+    'REDIRECT_SCRIPT_URI' => 'https://reachartvisual.com/back_api/backend/web/yii2images/images/image-by-item-and-alias',
+    'REDIRECT_HTTPS' => 'on',
+    'REDIRECT_SSL_TLS_SNI' => 'reachartvisual.com',
+    'REDIRECT_HANDLER' => 'application/x-httpd-ea-php74',
+    'REDIRECT_STATUS' => '200',
+    'UNIQUE_ID' => 'Y-9M6I2wDisqNvK8DPUOygAAAAY',
+    'SCRIPT_URL' => '/back_api/backend/web/yii2images/images/image-by-item-and-alias',
+    'SCRIPT_URI' => 'https://reachartvisual.com/back_api/backend/web/yii2images/images/image-by-item-and-alias',
+    'HTTPS' => 'on',
+    'SSL_TLS_SNI' => 'reachartvisual.com',
+    'HTTP_HOST' => 'reachartvisual.com',
+    'HTTP_CONNECTION' => 'keep-alive',
+    'HTTP_SEC_CH_UA' => '"Not_A Brand";v="99", "Google Chrome";v="109", "Chromium";v="109"',
+    'HTTP_SEC_CH_UA_MOBILE' => '?0',
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36',
+    'HTTP_SEC_CH_UA_PLATFORM' => '"Windows"',
+    'HTTP_ACCEPT' => 'image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8',
+    'HTTP_SEC_FETCH_SITE' => 'same-origin',
+    'HTTP_SEC_FETCH_MODE' => 'no-cors',
+    'HTTP_SEC_FETCH_DEST' => 'image',
+    'HTTP_REFERER' => 'https://reachartvisual.com/back_api/backend/web/journal/update?id=275',
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br',
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9,ru;q=0.8',
+    'HTTP_COOKIE' => 'timezone=Asia/Dubai; cpsession=reachart%3acYIQmAC7OKNgXQeM%2cbbe741d8caeac0387ad667dc3da386da; advanced-backend=0244de38c16d96b71f16e0a1242b74b0; _identity-backend=b1f011588906e71ab926fdbab74157a95fb6ae815269006edb78f2dcc3d83161a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B6%2C%22CRCN-jL-sH8ExLZIUNEM-Hid2GRW_-Mh%22%2C2592000%5D%22%3B%7D; _backend_csrf=c33672a53340312c3e65c4c31607513f57e87afbe7f43cf37311b866a8989fe3a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_backend_csrf%22%3Bi%3A1%3Bs%3A32%3A%22Akc0HsBGZcwTstxdxoogXc_0ak_SHnB1%22%3B%7D',
+    'HTTP_X_HTTPS' => '1',
+    'PATH' => '/usr/local/jdk/bin:/usr/kerberos/sbin:/usr/kerberos/bin:/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin:/usr/X11R6/bin:/usr/local/bin:/usr/X11R6/bin:/root/bin:/opt/bin',
+    'SERVER_SIGNATURE' => '',
+    'SERVER_SOFTWARE' => 'Apache',
+    'SERVER_NAME' => 'reachartvisual.com',
+    'SERVER_ADDR' => '91.239.207.130',
+    'SERVER_PORT' => '443',
+    'REMOTE_ADDR' => '176.221.239.92',
+    'DOCUMENT_ROOT' => '/home/reachart/public_html',
+    'REQUEST_SCHEME' => 'https',
+    'CONTEXT_PREFIX' => '/cgi-sys',
+    'CONTEXT_DOCUMENT_ROOT' => '/usr/local/cpanel/cgi-sys/',
+    'SERVER_ADMIN' => 'webmaster@reachartvisual.com',
+    'SCRIPT_FILENAME' => '/home/reachart/public_html/back_api/backend/web/index.php',
+    'REMOTE_PORT' => '13081',
+    'REDIRECT_URL' => '/back_api/backend/web/index.php',
+    'REDIRECT_QUERY_STRING' => 'item=Journal275&dirtyAlias=b9286e5319-1_150x.jpg',
+    'GATEWAY_INTERFACE' => 'CGI/1.1',
+    'SERVER_PROTOCOL' => 'HTTP/1.1',
+    'REQUEST_METHOD' => 'GET',
+    'QUERY_STRING' => 'item=Journal275&dirtyAlias=b9286e5319-1_150x.jpg',
+    'REQUEST_URI' => '/back_api/backend/web/yii2images/images/image-by-item-and-alias?item=Journal275&dirtyAlias=b9286e5319-1_150x.jpg',
+    'SCRIPT_NAME' => '/back_api/backend/web/index.php',
+    'ORIG_SCRIPT_FILENAME' => '/usr/local/cpanel/cgi-sys/ea-php74',
+    'ORIG_PATH_INFO' => '/back_api/backend/web/index.php',
+    'ORIG_PATH_TRANSLATED' => '/home/reachart/public_html/back_api/backend/web/index.php',
+    'ORIG_SCRIPT_NAME' => '/cgi-sys/ea-php74',
+    'PHP_SELF' => '/back_api/backend/web/index.php',
+    'REQUEST_TIME_FLOAT' => 1676627176.0937139987945556640625,
+    'REQUEST_TIME' => 1676627176,
+    'argv' => [
+        'item=Journal275&dirtyAlias=b9286e5319-1_150x.jpg',
+    ],
+    'argc' => 1,
+]
+[17-Feb-2023 09:46:40 UTC] An Error occurred while handling another error:
+yii\web\HeadersAlreadySentException: Headers already sent in /home/reachart/public_html/back_api/vendor/costa-rico/yii2-images/controllers/ImagesController.php on line 56. in /home/reachart/public_html/back_api/vendor/yiisoft/yii2/web/Response.php:368
+Stack trace:
+#0 /home/reachart/public_html/back_api/vendor/yiisoft/yii2/web/Response.php(341): yii\web\Response->sendHeaders()
+#1 /home/reachart/public_html/back_api/vendor/yiisoft/yii2/web/ErrorHandler.php(136): yii\web\Response->send()
+#2 /home/reachart/public_html/back_api/vendor/yiisoft/yii2/base/ErrorHandler.php(135): yii\web\ErrorHandler->renderException(Object(yii\web\HeadersAlreadySentException))
+#3 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\web\HeadersAlreadySentException))
+#4 {main}
+Previous exception:
+yii\web\HeadersAlreadySentException: Headers already sent in /home/reachart/public_html/back_api/vendor/costa-rico/yii2-images/controllers/ImagesController.php on line 56. in /home/reachart/public_html/back_api/vendor/yiisoft/yii2/web/Response.php:368
+Stack trace:
+#0 /home/reachart/public_html/back_api/vendor/yiisoft/yii2/web/Response.php(341): yii\web\Response->sendHeaders()
+#1 /home/reachart/public_html/back_api/vendor/yiisoft/yii2/base/Application.php(390): yii\web\Response->send()
+#2 /home/reachart/public_html/back_api/backend/web/index.php(17): yii\base\Application->run()
+#3 {main}
+$_SERVER = [
+    'TZ' => 'Asia/Tbilisi',
+    'REDIRECT_REDIRECT_UNIQUE_ID' => 'Y-9NAI-u2FolBUb_vtWY2gAAAAU',
+    'REDIRECT_REDIRECT_SCRIPT_URL' => '/back_api/backend/web/yii2images/images/image-by-item-and-alias',
+    'REDIRECT_REDIRECT_SCRIPT_URI' => 'https://reachartvisual.com/back_api/backend/web/yii2images/images/image-by-item-and-alias',
+    'REDIRECT_REDIRECT_HTTPS' => 'on',
+    'REDIRECT_REDIRECT_SSL_TLS_SNI' => 'reachartvisual.com',
+    'REDIRECT_REDIRECT_STATUS' => '200',
+    'REDIRECT_UNIQUE_ID' => 'Y-9NAI-u2FolBUb_vtWY2gAAAAU',
+    'REDIRECT_SCRIPT_URL' => '/back_api/backend/web/yii2images/images/image-by-item-and-alias',
+    'REDIRECT_SCRIPT_URI' => 'https://reachartvisual.com/back_api/backend/web/yii2images/images/image-by-item-and-alias',
+    'REDIRECT_HTTPS' => 'on',
+    'REDIRECT_SSL_TLS_SNI' => 'reachartvisual.com',
+    'REDIRECT_HANDLER' => 'application/x-httpd-ea-php74',
+    'REDIRECT_STATUS' => '200',
+    'UNIQUE_ID' => 'Y-9NAI-u2FolBUb_vtWY2gAAAAU',
+    'SCRIPT_URL' => '/back_api/backend/web/yii2images/images/image-by-item-and-alias',
+    'SCRIPT_URI' => 'https://reachartvisual.com/back_api/backend/web/yii2images/images/image-by-item-and-alias',
+    'HTTPS' => 'on',
+    'SSL_TLS_SNI' => 'reachartvisual.com',
+    'HTTP_HOST' => 'reachartvisual.com',
+    'HTTP_CONNECTION' => 'keep-alive',
+    'HTTP_SEC_CH_UA' => '"Not_A Brand";v="99", "Google Chrome";v="109", "Chromium";v="109"',
+    'HTTP_SEC_CH_UA_MOBILE' => '?0',
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36',
+    'HTTP_SEC_CH_UA_PLATFORM' => '"Windows"',
+    'HTTP_ACCEPT' => 'image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8',
+    'HTTP_SEC_FETCH_SITE' => 'same-origin',
+    'HTTP_SEC_FETCH_MODE' => 'no-cors',
+    'HTTP_SEC_FETCH_DEST' => 'image',
+    'HTTP_REFERER' => 'https://reachartvisual.com/back_api/backend/web/journal/update?id=275',
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br',
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9,ru;q=0.8',
+    'HTTP_COOKIE' => 'timezone=Asia/Dubai; cpsession=reachart%3acYIQmAC7OKNgXQeM%2cbbe741d8caeac0387ad667dc3da386da; advanced-backend=0244de38c16d96b71f16e0a1242b74b0; _identity-backend=b1f011588906e71ab926fdbab74157a95fb6ae815269006edb78f2dcc3d83161a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B6%2C%22CRCN-jL-sH8ExLZIUNEM-Hid2GRW_-Mh%22%2C2592000%5D%22%3B%7D; _backend_csrf=c33672a53340312c3e65c4c31607513f57e87afbe7f43cf37311b866a8989fe3a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_backend_csrf%22%3Bi%3A1%3Bs%3A32%3A%22Akc0HsBGZcwTstxdxoogXc_0ak_SHnB1%22%3B%7D',
+    'HTTP_X_HTTPS' => '1',
+    'PATH' => '/usr/local/jdk/bin:/usr/kerberos/sbin:/usr/kerberos/bin:/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin:/usr/X11R6/bin:/usr/local/bin:/usr/X11R6/bin:/root/bin:/opt/bin',
+    'SERVER_SIGNATURE' => '',
+    'SERVER_SOFTWARE' => 'Apache',
+    'SERVER_NAME' => 'reachartvisual.com',
+    'SERVER_ADDR' => '91.239.207.130',
+    'SERVER_PORT' => '443',
+    'REMOTE_ADDR' => '176.221.239.92',
+    'DOCUMENT_ROOT' => '/home/reachart/public_html',
+    'REQUEST_SCHEME' => 'https',
+    'CONTEXT_PREFIX' => '/cgi-sys',
+    'CONTEXT_DOCUMENT_ROOT' => '/usr/local/cpanel/cgi-sys/',
+    'SERVER_ADMIN' => 'webmaster@reachartvisual.com',
+    'SCRIPT_FILENAME' => '/home/reachart/public_html/back_api/backend/web/index.php',
+    'REMOTE_PORT' => '13091',
+    'REDIRECT_URL' => '/back_api/backend/web/index.php',
+    'REDIRECT_QUERY_STRING' => 'item=&dirtyAlias=placeHolder_150x.png',
+    'GATEWAY_INTERFACE' => 'CGI/1.1',
+    'SERVER_PROTOCOL' => 'HTTP/1.1',
+    'REQUEST_METHOD' => 'GET',
+    'QUERY_STRING' => 'item=&dirtyAlias=placeHolder_150x.png',
+    'REQUEST_URI' => '/back_api/backend/web/yii2images/images/image-by-item-and-alias?item=&dirtyAlias=placeHolder_150x.png',
+    'SCRIPT_NAME' => '/back_api/backend/web/index.php',
+    'ORIG_SCRIPT_FILENAME' => '/usr/local/cpanel/cgi-sys/ea-php74',
+    'ORIG_PATH_INFO' => '/back_api/backend/web/index.php',
+    'ORIG_PATH_TRANSLATED' => '/home/reachart/public_html/back_api/backend/web/index.php',
+    'ORIG_SCRIPT_NAME' => '/cgi-sys/ea-php74',
+    'PHP_SELF' => '/back_api/backend/web/index.php',
+    'REQUEST_TIME_FLOAT' => 1676627200.3038818836212158203125,
+    'REQUEST_TIME' => 1676627200,
+    'argv' => [
+        'item=&dirtyAlias=placeHolder_150x.png',
+    ],
+    'argc' => 1,
+]
+[17-Feb-2023 09:47:06 UTC] An Error occurred while handling another error:
+yii\web\HeadersAlreadySentException: Headers already sent in /home/reachart/public_html/back_api/vendor/costa-rico/yii2-images/controllers/ImagesController.php on line 56. in /home/reachart/public_html/back_api/vendor/yiisoft/yii2/web/Response.php:368
+Stack trace:
+#0 /home/reachart/public_html/back_api/vendor/yiisoft/yii2/web/Response.php(341): yii\web\Response->sendHeaders()
+#1 /home/reachart/public_html/back_api/vendor/yiisoft/yii2/web/ErrorHandler.php(136): yii\web\Response->send()
+#2 /home/reachart/public_html/back_api/vendor/yiisoft/yii2/base/ErrorHandler.php(135): yii\web\ErrorHandler->renderException(Object(yii\web\HeadersAlreadySentException))
+#3 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\web\HeadersAlreadySentException))
+#4 {main}
+Previous exception:
+yii\web\HeadersAlreadySentException: Headers already sent in /home/reachart/public_html/back_api/vendor/costa-rico/yii2-images/controllers/ImagesController.php on line 56. in /home/reachart/public_html/back_api/vendor/yiisoft/yii2/web/Response.php:368
+Stack trace:
+#0 /home/reachart/public_html/back_api/vendor/yiisoft/yii2/web/Response.php(341): yii\web\Response->sendHeaders()
+#1 /home/reachart/public_html/back_api/vendor/yiisoft/yii2/base/Application.php(390): yii\web\Response->send()
+#2 /home/reachart/public_html/back_api/backend/web/index.php(17): yii\base\Application->run()
+#3 {main}
+$_SERVER = [
+    'TZ' => 'Asia/Tbilisi',
+    'REDIRECT_REDIRECT_UNIQUE_ID' => 'Y-9NGgbYOj0dDZvQmT7IuwAAAAI',
+    'REDIRECT_REDIRECT_SCRIPT_URL' => '/back_api/backend/web/yii2images/images/image-by-item-and-alias',
+    'REDIRECT_REDIRECT_SCRIPT_URI' => 'https://reachartvisual.com/back_api/backend/web/yii2images/images/image-by-item-and-alias',
+    'REDIRECT_REDIRECT_HTTPS' => 'on',
+    'REDIRECT_REDIRECT_SSL_TLS_SNI' => 'reachartvisual.com',
+    'REDIRECT_REDIRECT_STATUS' => '200',
+    'REDIRECT_UNIQUE_ID' => 'Y-9NGgbYOj0dDZvQmT7IuwAAAAI',
+    'REDIRECT_SCRIPT_URL' => '/back_api/backend/web/yii2images/images/image-by-item-and-alias',
+    'REDIRECT_SCRIPT_URI' => 'https://reachartvisual.com/back_api/backend/web/yii2images/images/image-by-item-and-alias',
+    'REDIRECT_HTTPS' => 'on',
+    'REDIRECT_SSL_TLS_SNI' => 'reachartvisual.com',
+    'REDIRECT_HANDLER' => 'application/x-httpd-ea-php74',
+    'REDIRECT_STATUS' => '200',
+    'UNIQUE_ID' => 'Y-9NGgbYOj0dDZvQmT7IuwAAAAI',
+    'SCRIPT_URL' => '/back_api/backend/web/yii2images/images/image-by-item-and-alias',
+    'SCRIPT_URI' => 'https://reachartvisual.com/back_api/backend/web/yii2images/images/image-by-item-and-alias',
+    'HTTPS' => 'on',
+    'SSL_TLS_SNI' => 'reachartvisual.com',
+    'HTTP_HOST' => 'reachartvisual.com',
+    'HTTP_CONNECTION' => 'keep-alive',
+    'HTTP_SEC_CH_UA' => '"Not_A Brand";v="99", "Google Chrome";v="109", "Chromium";v="109"',
+    'HTTP_SEC_CH_UA_MOBILE' => '?0',
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36',
+    'HTTP_SEC_CH_UA_PLATFORM' => '"Windows"',
+    'HTTP_ACCEPT' => 'image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8',
+    'HTTP_SEC_FETCH_SITE' => 'same-origin',
+    'HTTP_SEC_FETCH_MODE' => 'no-cors',
+    'HTTP_SEC_FETCH_DEST' => 'image',
+    'HTTP_REFERER' => 'https://reachartvisual.com/back_api/backend/web/journal/update?id=275',
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br',
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9,ru;q=0.8',
+    'HTTP_COOKIE' => 'timezone=Asia/Dubai; cpsession=reachart%3acYIQmAC7OKNgXQeM%2cbbe741d8caeac0387ad667dc3da386da; advanced-backend=0244de38c16d96b71f16e0a1242b74b0; _identity-backend=b1f011588906e71ab926fdbab74157a95fb6ae815269006edb78f2dcc3d83161a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B6%2C%22CRCN-jL-sH8ExLZIUNEM-Hid2GRW_-Mh%22%2C2592000%5D%22%3B%7D; _backend_csrf=c33672a53340312c3e65c4c31607513f57e87afbe7f43cf37311b866a8989fe3a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_backend_csrf%22%3Bi%3A1%3Bs%3A32%3A%22Akc0HsBGZcwTstxdxoogXc_0ak_SHnB1%22%3B%7D',
+    'HTTP_X_HTTPS' => '1',
+    'PATH' => '/usr/local/jdk/bin:/usr/kerberos/sbin:/usr/kerberos/bin:/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin:/usr/X11R6/bin:/usr/local/bin:/usr/X11R6/bin:/root/bin:/opt/bin',
+    'SERVER_SIGNATURE' => '',
+    'SERVER_SOFTWARE' => 'Apache',
+    'SERVER_NAME' => 'reachartvisual.com',
+    'SERVER_ADDR' => '91.239.207.130',
+    'SERVER_PORT' => '443',
+    'REMOTE_ADDR' => '176.221.239.92',
+    'DOCUMENT_ROOT' => '/home/reachart/public_html',
+    'REQUEST_SCHEME' => 'https',
+    'CONTEXT_PREFIX' => '/cgi-sys',
+    'CONTEXT_DOCUMENT_ROOT' => '/usr/local/cpanel/cgi-sys/',
+    'SERVER_ADMIN' => 'webmaster@reachartvisual.com',
+    'SCRIPT_FILENAME' => '/home/reachart/public_html/back_api/backend/web/index.php',
+    'REMOTE_PORT' => '60588',
+    'REDIRECT_URL' => '/back_api/backend/web/index.php',
+    'REDIRECT_QUERY_STRING' => 'item=&dirtyAlias=placeHolder_150x.png',
+    'GATEWAY_INTERFACE' => 'CGI/1.1',
+    'SERVER_PROTOCOL' => 'HTTP/1.1',
+    'REQUEST_METHOD' => 'GET',
+    'QUERY_STRING' => 'item=&dirtyAlias=placeHolder_150x.png',
+    'REQUEST_URI' => '/back_api/backend/web/yii2images/images/image-by-item-and-alias?item=&dirtyAlias=placeHolder_150x.png',
+    'SCRIPT_NAME' => '/back_api/backend/web/index.php',
+    'ORIG_SCRIPT_FILENAME' => '/usr/local/cpanel/cgi-sys/ea-php74',
+    'ORIG_PATH_INFO' => '/back_api/backend/web/index.php',
+    'ORIG_PATH_TRANSLATED' => '/home/reachart/public_html/back_api/backend/web/index.php',
+    'ORIG_SCRIPT_NAME' => '/cgi-sys/ea-php74',
+    'PHP_SELF' => '/back_api/backend/web/index.php',
+    'REQUEST_TIME_FLOAT' => 1676627226.294949054718017578125,
+    'REQUEST_TIME' => 1676627226,
+    'argv' => [
+        'item=&dirtyAlias=placeHolder_150x.png',
+    ],
+    'argc' => 1,
+]
+[17-Feb-2023 09:52:29 UTC] An Error occurred while handling another error:
+yii\web\HeadersAlreadySentException: Headers already sent in /home/reachart/public_html/back_api/vendor/costa-rico/yii2-images/controllers/ImagesController.php on line 56. in /home/reachart/public_html/back_api/vendor/yiisoft/yii2/web/Response.php:368
+Stack trace:
+#0 /home/reachart/public_html/back_api/vendor/yiisoft/yii2/web/Response.php(341): yii\web\Response->sendHeaders()
+#1 /home/reachart/public_html/back_api/vendor/yiisoft/yii2/web/ErrorHandler.php(136): yii\web\Response->send()
+#2 /home/reachart/public_html/back_api/vendor/yiisoft/yii2/base/ErrorHandler.php(135): yii\web\ErrorHandler->renderException(Object(yii\web\HeadersAlreadySentException))
+#3 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\web\HeadersAlreadySentException))
+#4 {main}
+Previous exception:
+yii\web\HeadersAlreadySentException: Headers already sent in /home/reachart/public_html/back_api/vendor/costa-rico/yii2-images/controllers/ImagesController.php on line 56. in /home/reachart/public_html/back_api/vendor/yiisoft/yii2/web/Response.php:368
+Stack trace:
+#0 /home/reachart/public_html/back_api/vendor/yiisoft/yii2/web/Response.php(341): yii\web\Response->sendHeaders()
+#1 /home/reachart/public_html/back_api/vendor/yiisoft/yii2/base/Application.php(390): yii\web\Response->send()
+#2 /home/reachart/public_html/back_api/backend/web/index.php(17): yii\base\Application->run()
+#3 {main}
+$_SERVER = [
+    'TZ' => 'Asia/Tbilisi',
+    'REDIRECT_REDIRECT_UNIQUE_ID' => 'Y-9OXR2U0E-W-Cgl7WR9HAAAAAI',
+    'REDIRECT_REDIRECT_SCRIPT_URL' => '/back_api/backend/web/yii2images/images/image-by-item-and-alias',
+    'REDIRECT_REDIRECT_SCRIPT_URI' => 'https://reachartvisual.com/back_api/backend/web/yii2images/images/image-by-item-and-alias',
+    'REDIRECT_REDIRECT_HTTPS' => 'on',
+    'REDIRECT_REDIRECT_SSL_TLS_SNI' => 'reachartvisual.com',
+    'REDIRECT_REDIRECT_STATUS' => '200',
+    'REDIRECT_UNIQUE_ID' => 'Y-9OXR2U0E-W-Cgl7WR9HAAAAAI',
+    'REDIRECT_SCRIPT_URL' => '/back_api/backend/web/yii2images/images/image-by-item-and-alias',
+    'REDIRECT_SCRIPT_URI' => 'https://reachartvisual.com/back_api/backend/web/yii2images/images/image-by-item-and-alias',
+    'REDIRECT_HTTPS' => 'on',
+    'REDIRECT_SSL_TLS_SNI' => 'reachartvisual.com',
+    'REDIRECT_HANDLER' => 'application/x-httpd-ea-php74',
+    'REDIRECT_STATUS' => '200',
+    'UNIQUE_ID' => 'Y-9OXR2U0E-W-Cgl7WR9HAAAAAI',
+    'SCRIPT_URL' => '/back_api/backend/web/yii2images/images/image-by-item-and-alias',
+    'SCRIPT_URI' => 'https://reachartvisual.com/back_api/backend/web/yii2images/images/image-by-item-and-alias',
+    'HTTPS' => 'on',
+    'SSL_TLS_SNI' => 'reachartvisual.com',
+    'HTTP_HOST' => 'reachartvisual.com',
+    'HTTP_CONNECTION' => 'keep-alive',
+    'HTTP_SEC_CH_UA' => '"Not_A Brand";v="99", "Google Chrome";v="109", "Chromium";v="109"',
+    'HTTP_SEC_CH_UA_MOBILE' => '?0',
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36',
+    'HTTP_SEC_CH_UA_PLATFORM' => '"Windows"',
+    'HTTP_ACCEPT' => 'image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8',
+    'HTTP_SEC_FETCH_SITE' => 'same-origin',
+    'HTTP_SEC_FETCH_MODE' => 'no-cors',
+    'HTTP_SEC_FETCH_DEST' => 'image',
+    'HTTP_REFERER' => 'https://reachartvisual.com/back_api/backend/web/journal/create',
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br',
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9,ru;q=0.8',
+    'HTTP_COOKIE' => 'timezone=Asia/Dubai; cpsession=reachart%3acYIQmAC7OKNgXQeM%2cbbe741d8caeac0387ad667dc3da386da; advanced-backend=0244de38c16d96b71f16e0a1242b74b0; _identity-backend=b1f011588906e71ab926fdbab74157a95fb6ae815269006edb78f2dcc3d83161a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B6%2C%22CRCN-jL-sH8ExLZIUNEM-Hid2GRW_-Mh%22%2C2592000%5D%22%3B%7D; _backend_csrf=c33672a53340312c3e65c4c31607513f57e87afbe7f43cf37311b866a8989fe3a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_backend_csrf%22%3Bi%3A1%3Bs%3A32%3A%22Akc0HsBGZcwTstxdxoogXc_0ak_SHnB1%22%3B%7D',
+    'HTTP_X_HTTPS' => '1',
+    'PATH' => '/usr/local/jdk/bin:/usr/kerberos/sbin:/usr/kerberos/bin:/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin:/usr/X11R6/bin:/usr/local/bin:/usr/X11R6/bin:/root/bin:/opt/bin',
+    'SERVER_SIGNATURE' => '',
+    'SERVER_SOFTWARE' => 'Apache',
+    'SERVER_NAME' => 'reachartvisual.com',
+    'SERVER_ADDR' => '91.239.207.130',
+    'SERVER_PORT' => '443',
+    'REMOTE_ADDR' => '176.221.239.92',
+    'DOCUMENT_ROOT' => '/home/reachart/public_html',
+    'REQUEST_SCHEME' => 'https',
+    'CONTEXT_PREFIX' => '/cgi-sys',
+    'CONTEXT_DOCUMENT_ROOT' => '/usr/local/cpanel/cgi-sys/',
+    'SERVER_ADMIN' => 'webmaster@reachartvisual.com',
+    'SCRIPT_FILENAME' => '/home/reachart/public_html/back_api/backend/web/index.php',
+    'REMOTE_PORT' => '13253',
+    'REDIRECT_URL' => '/back_api/backend/web/index.php',
+    'REDIRECT_QUERY_STRING' => 'item=&dirtyAlias=placeHolder_150x.png',
+    'GATEWAY_INTERFACE' => 'CGI/1.1',
+    'SERVER_PROTOCOL' => 'HTTP/1.1',
+    'REQUEST_METHOD' => 'GET',
+    'QUERY_STRING' => 'item=&dirtyAlias=placeHolder_150x.png',
+    'REQUEST_URI' => '/back_api/backend/web/yii2images/images/image-by-item-and-alias?item=&dirtyAlias=placeHolder_150x.png',
+    'SCRIPT_NAME' => '/back_api/backend/web/index.php',
+    'ORIG_SCRIPT_FILENAME' => '/usr/local/cpanel/cgi-sys/ea-php74',
+    'ORIG_PATH_INFO' => '/back_api/backend/web/index.php',
+    'ORIG_PATH_TRANSLATED' => '/home/reachart/public_html/back_api/backend/web/index.php',
+    'ORIG_SCRIPT_NAME' => '/cgi-sys/ea-php74',
+    'PHP_SELF' => '/back_api/backend/web/index.php',
+    'REQUEST_TIME_FLOAT' => 1676627549.531239032745361328125,
+    'REQUEST_TIME' => 1676627549,
+    'argv' => [
+        'item=&dirtyAlias=placeHolder_150x.png',
+    ],
+    'argc' => 1,
+]
+[17-Feb-2023 09:52:50 UTC] An Error occurred while handling another error:
+yii\web\HeadersAlreadySentException: Headers already sent in /home/reachart/public_html/back_api/vendor/costa-rico/yii2-images/controllers/ImagesController.php on line 56. in /home/reachart/public_html/back_api/vendor/yiisoft/yii2/web/Response.php:368
+Stack trace:
+#0 /home/reachart/public_html/back_api/vendor/yiisoft/yii2/web/Response.php(341): yii\web\Response->sendHeaders()
+#1 /home/reachart/public_html/back_api/vendor/yiisoft/yii2/web/ErrorHandler.php(136): yii\web\Response->send()
+#2 /home/reachart/public_html/back_api/vendor/yiisoft/yii2/base/ErrorHandler.php(135): yii\web\ErrorHandler->renderException(Object(yii\web\HeadersAlreadySentException))
+#3 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\web\HeadersAlreadySentException))
+#4 {main}
+Previous exception:
+yii\web\HeadersAlreadySentException: Headers already sent in /home/reachart/public_html/back_api/vendor/costa-rico/yii2-images/controllers/ImagesController.php on line 56. in /home/reachart/public_html/back_api/vendor/yiisoft/yii2/web/Response.php:368
+Stack trace:
+#0 /home/reachart/public_html/back_api/vendor/yiisoft/yii2/web/Response.php(341): yii\web\Response->sendHeaders()
+#1 /home/reachart/public_html/back_api/vendor/yiisoft/yii2/base/Application.php(390): yii\web\Response->send()
+#2 /home/reachart/public_html/back_api/backend/web/index.php(17): yii\base\Application->run()
+#3 {main}
+$_SERVER = [
+    'TZ' => 'Asia/Tbilisi',
+    'REDIRECT_REDIRECT_UNIQUE_ID' => 'Y-9OcmvtHyGZZcSqo403xgAAAAE',
+    'REDIRECT_REDIRECT_SCRIPT_URL' => '/back_api/backend/web/yii2images/images/image-by-item-and-alias',
+    'REDIRECT_REDIRECT_SCRIPT_URI' => 'https://reachartvisual.com/back_api/backend/web/yii2images/images/image-by-item-and-alias',
+    'REDIRECT_REDIRECT_HTTPS' => 'on',
+    'REDIRECT_REDIRECT_SSL_TLS_SNI' => 'reachartvisual.com',
+    'REDIRECT_REDIRECT_STATUS' => '200',
+    'REDIRECT_UNIQUE_ID' => 'Y-9OcmvtHyGZZcSqo403xgAAAAE',
+    'REDIRECT_SCRIPT_URL' => '/back_api/backend/web/yii2images/images/image-by-item-and-alias',
+    'REDIRECT_SCRIPT_URI' => 'https://reachartvisual.com/back_api/backend/web/yii2images/images/image-by-item-and-alias',
+    'REDIRECT_HTTPS' => 'on',
+    'REDIRECT_SSL_TLS_SNI' => 'reachartvisual.com',
+    'REDIRECT_HANDLER' => 'application/x-httpd-ea-php74',
+    'REDIRECT_STATUS' => '200',
+    'UNIQUE_ID' => 'Y-9OcmvtHyGZZcSqo403xgAAAAE',
+    'SCRIPT_URL' => '/back_api/backend/web/yii2images/images/image-by-item-and-alias',
+    'SCRIPT_URI' => 'https://reachartvisual.com/back_api/backend/web/yii2images/images/image-by-item-and-alias',
+    'HTTPS' => 'on',
+    'SSL_TLS_SNI' => 'reachartvisual.com',
+    'HTTP_HOST' => 'reachartvisual.com',
+    'HTTP_CONNECTION' => 'keep-alive',
+    'HTTP_SEC_CH_UA' => '"Not_A Brand";v="99", "Google Chrome";v="109", "Chromium";v="109"',
+    'HTTP_SEC_CH_UA_MOBILE' => '?0',
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36',
+    'HTTP_SEC_CH_UA_PLATFORM' => '"Windows"',
+    'HTTP_ACCEPT' => 'image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8',
+    'HTTP_SEC_FETCH_SITE' => 'same-origin',
+    'HTTP_SEC_FETCH_MODE' => 'no-cors',
+    'HTTP_SEC_FETCH_DEST' => 'image',
+    'HTTP_REFERER' => 'https://reachartvisual.com/back_api/backend/web/journal/update?id=276',
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br',
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9,ru;q=0.8',
+    'HTTP_COOKIE' => 'timezone=Asia/Dubai; cpsession=reachart%3acYIQmAC7OKNgXQeM%2cbbe741d8caeac0387ad667dc3da386da; advanced-backend=0244de38c16d96b71f16e0a1242b74b0; _identity-backend=b1f011588906e71ab926fdbab74157a95fb6ae815269006edb78f2dcc3d83161a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B6%2C%22CRCN-jL-sH8ExLZIUNEM-Hid2GRW_-Mh%22%2C2592000%5D%22%3B%7D; _backend_csrf=c33672a53340312c3e65c4c31607513f57e87afbe7f43cf37311b866a8989fe3a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_backend_csrf%22%3Bi%3A1%3Bs%3A32%3A%22Akc0HsBGZcwTstxdxoogXc_0ak_SHnB1%22%3B%7D',
+    'HTTP_X_HTTPS' => '1',
+    'PATH' => '/usr/local/jdk/bin:/usr/kerberos/sbin:/usr/kerberos/bin:/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin:/usr/X11R6/bin:/usr/local/bin:/usr/X11R6/bin:/root/bin:/opt/bin',
+    'SERVER_SIGNATURE' => '',
+    'SERVER_SOFTWARE' => 'Apache',
+    'SERVER_NAME' => 'reachartvisual.com',
+    'SERVER_ADDR' => '91.239.207.130',
+    'SERVER_PORT' => '443',
+    'REMOTE_ADDR' => '176.221.239.92',
+    'DOCUMENT_ROOT' => '/home/reachart/public_html',
+    'REQUEST_SCHEME' => 'https',
+    'CONTEXT_PREFIX' => '/cgi-sys',
+    'CONTEXT_DOCUMENT_ROOT' => '/usr/local/cpanel/cgi-sys/',
+    'SERVER_ADMIN' => 'webmaster@reachartvisual.com',
+    'SCRIPT_FILENAME' => '/home/reachart/public_html/back_api/backend/web/index.php',
+    'REMOTE_PORT' => '60890',
+    'REDIRECT_URL' => '/back_api/backend/web/index.php',
+    'REDIRECT_QUERY_STRING' => 'item=&dirtyAlias=placeHolder_150x.png',
+    'GATEWAY_INTERFACE' => 'CGI/1.1',
+    'SERVER_PROTOCOL' => 'HTTP/1.1',
+    'REQUEST_METHOD' => 'GET',
+    'QUERY_STRING' => 'item=&dirtyAlias=placeHolder_150x.png',
+    'REQUEST_URI' => '/back_api/backend/web/yii2images/images/image-by-item-and-alias?item=&dirtyAlias=placeHolder_150x.png',
+    'SCRIPT_NAME' => '/back_api/backend/web/index.php',
+    'ORIG_SCRIPT_FILENAME' => '/usr/local/cpanel/cgi-sys/ea-php74',
+    'ORIG_PATH_INFO' => '/back_api/backend/web/index.php',
+    'ORIG_PATH_TRANSLATED' => '/home/reachart/public_html/back_api/backend/web/index.php',
+    'ORIG_SCRIPT_NAME' => '/cgi-sys/ea-php74',
+    'PHP_SELF' => '/back_api/backend/web/index.php',
+    'REQUEST_TIME_FLOAT' => 1676627570.37658596038818359375,
+    'REQUEST_TIME' => 1676627570,
+    'argv' => [
+        'item=&dirtyAlias=placeHolder_150x.png',
+    ],
+    'argc' => 1,
+]
+[17-Feb-2023 09:58:31 UTC] An Error occurred while handling another error:
+yii\web\HeadersAlreadySentException: Headers already sent in /home/reachart/public_html/back_api/vendor/costa-rico/yii2-images/controllers/ImagesController.php on line 56. in /home/reachart/public_html/back_api/vendor/yiisoft/yii2/web/Response.php:368
+Stack trace:
+#0 /home/reachart/public_html/back_api/vendor/yiisoft/yii2/web/Response.php(341): yii\web\Response->sendHeaders()
+#1 /home/reachart/public_html/back_api/vendor/yiisoft/yii2/web/ErrorHandler.php(136): yii\web\Response->send()
+#2 /home/reachart/public_html/back_api/vendor/yiisoft/yii2/base/ErrorHandler.php(135): yii\web\ErrorHandler->renderException(Object(yii\web\HeadersAlreadySentException))
+#3 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\web\HeadersAlreadySentException))
+#4 {main}
+Previous exception:
+yii\web\HeadersAlreadySentException: Headers already sent in /home/reachart/public_html/back_api/vendor/costa-rico/yii2-images/controllers/ImagesController.php on line 56. in /home/reachart/public_html/back_api/vendor/yiisoft/yii2/web/Response.php:368
+Stack trace:
+#0 /home/reachart/public_html/back_api/vendor/yiisoft/yii2/web/Response.php(341): yii\web\Response->sendHeaders()
+#1 /home/reachart/public_html/back_api/vendor/yiisoft/yii2/base/Application.php(390): yii\web\Response->send()
+#2 /home/reachart/public_html/back_api/backend/web/index.php(17): yii\base\Application->run()
+#3 {main}
+$_SERVER = [
+    'TZ' => 'Asia/Tbilisi',
+    'REDIRECT_REDIRECT_UNIQUE_ID' => 'Y-9PxzF1K4RVPCB3lWqt-QAAAA4',
+    'REDIRECT_REDIRECT_SCRIPT_URL' => '/back_api/backend/web/yii2images/images/image-by-item-and-alias',
+    'REDIRECT_REDIRECT_SCRIPT_URI' => 'https://reachartvisual.com/back_api/backend/web/yii2images/images/image-by-item-and-alias',
+    'REDIRECT_REDIRECT_HTTPS' => 'on',
+    'REDIRECT_REDIRECT_SSL_TLS_SNI' => 'reachartvisual.com',
+    'REDIRECT_REDIRECT_STATUS' => '200',
+    'REDIRECT_UNIQUE_ID' => 'Y-9PxzF1K4RVPCB3lWqt-QAAAA4',
+    'REDIRECT_SCRIPT_URL' => '/back_api/backend/web/yii2images/images/image-by-item-and-alias',
+    'REDIRECT_SCRIPT_URI' => 'https://reachartvisual.com/back_api/backend/web/yii2images/images/image-by-item-and-alias',
+    'REDIRECT_HTTPS' => 'on',
+    'REDIRECT_SSL_TLS_SNI' => 'reachartvisual.com',
+    'REDIRECT_HANDLER' => 'application/x-httpd-ea-php74',
+    'REDIRECT_STATUS' => '200',
+    'UNIQUE_ID' => 'Y-9PxzF1K4RVPCB3lWqt-QAAAA4',
+    'SCRIPT_URL' => '/back_api/backend/web/yii2images/images/image-by-item-and-alias',
+    'SCRIPT_URI' => 'https://reachartvisual.com/back_api/backend/web/yii2images/images/image-by-item-and-alias',
+    'HTTPS' => 'on',
+    'SSL_TLS_SNI' => 'reachartvisual.com',
+    'HTTP_HOST' => 'reachartvisual.com',
+    'HTTP_CONNECTION' => 'keep-alive',
+    'HTTP_SEC_CH_UA' => '"Not_A Brand";v="99", "Google Chrome";v="109", "Chromium";v="109"',
+    'HTTP_SEC_CH_UA_MOBILE' => '?0',
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36',
+    'HTTP_SEC_CH_UA_PLATFORM' => '"Windows"',
+    'HTTP_ACCEPT' => 'image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8',
+    'HTTP_SEC_FETCH_SITE' => 'same-origin',
+    'HTTP_SEC_FETCH_MODE' => 'no-cors',
+    'HTTP_SEC_FETCH_DEST' => 'image',
+    'HTTP_REFERER' => 'https://reachartvisual.com/back_api/backend/web/journal/update?id=276',
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br',
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9,ru;q=0.8',
+    'HTTP_COOKIE' => 'timezone=Asia/Dubai; cpsession=reachart%3acYIQmAC7OKNgXQeM%2cbbe741d8caeac0387ad667dc3da386da; advanced-backend=0244de38c16d96b71f16e0a1242b74b0; _identity-backend=b1f011588906e71ab926fdbab74157a95fb6ae815269006edb78f2dcc3d83161a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B6%2C%22CRCN-jL-sH8ExLZIUNEM-Hid2GRW_-Mh%22%2C2592000%5D%22%3B%7D; _backend_csrf=c33672a53340312c3e65c4c31607513f57e87afbe7f43cf37311b866a8989fe3a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_backend_csrf%22%3Bi%3A1%3Bs%3A32%3A%22Akc0HsBGZcwTstxdxoogXc_0ak_SHnB1%22%3B%7D',
+    'HTTP_X_HTTPS' => '1',
+    'PATH' => '/usr/local/jdk/bin:/usr/kerberos/sbin:/usr/kerberos/bin:/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin:/usr/X11R6/bin:/usr/local/bin:/usr/X11R6/bin:/root/bin:/opt/bin',
+    'SERVER_SIGNATURE' => '',
+    'SERVER_SOFTWARE' => 'Apache',
+    'SERVER_NAME' => 'reachartvisual.com',
+    'SERVER_ADDR' => '91.239.207.130',
+    'SERVER_PORT' => '443',
+    'REMOTE_ADDR' => '176.221.239.92',
+    'DOCUMENT_ROOT' => '/home/reachart/public_html',
+    'REQUEST_SCHEME' => 'https',
+    'CONTEXT_PREFIX' => '/cgi-sys',
+    'CONTEXT_DOCUMENT_ROOT' => '/usr/local/cpanel/cgi-sys/',
+    'SERVER_ADMIN' => 'webmaster@reachartvisual.com',
+    'SCRIPT_FILENAME' => '/home/reachart/public_html/back_api/backend/web/index.php',
+    'REMOTE_PORT' => '13425',
+    'REDIRECT_URL' => '/back_api/backend/web/index.php',
+    'REDIRECT_QUERY_STRING' => 'item=&dirtyAlias=placeHolder_150x.png',
+    'GATEWAY_INTERFACE' => 'CGI/1.1',
+    'SERVER_PROTOCOL' => 'HTTP/1.1',
+    'REQUEST_METHOD' => 'GET',
+    'QUERY_STRING' => 'item=&dirtyAlias=placeHolder_150x.png',
+    'REQUEST_URI' => '/back_api/backend/web/yii2images/images/image-by-item-and-alias?item=&dirtyAlias=placeHolder_150x.png',
+    'SCRIPT_NAME' => '/back_api/backend/web/index.php',
+    'ORIG_SCRIPT_FILENAME' => '/usr/local/cpanel/cgi-sys/ea-php74',
+    'ORIG_PATH_INFO' => '/back_api/backend/web/index.php',
+    'ORIG_PATH_TRANSLATED' => '/home/reachart/public_html/back_api/backend/web/index.php',
+    'ORIG_SCRIPT_NAME' => '/cgi-sys/ea-php74',
+    'PHP_SELF' => '/back_api/backend/web/index.php',
+    'REQUEST_TIME_FLOAT' => 1676627911.4145820140838623046875,
+    'REQUEST_TIME' => 1676627911,
+    'argv' => [
+        'item=&dirtyAlias=placeHolder_150x.png',
+    ],
+    'argc' => 1,
+]
+[17-Feb-2023 09:58:58 UTC] An Error occurred while handling another error:
+yii\web\HeadersAlreadySentException: Headers already sent in /home/reachart/public_html/back_api/vendor/costa-rico/yii2-images/controllers/ImagesController.php on line 56. in /home/reachart/public_html/back_api/vendor/yiisoft/yii2/web/Response.php:368
+Stack trace:
+#0 /home/reachart/public_html/back_api/vendor/yiisoft/yii2/web/Response.php(341): yii\web\Response->sendHeaders()
+#1 /home/reachart/public_html/back_api/vendor/yiisoft/yii2/web/ErrorHandler.php(136): yii\web\Response->send()
+#2 /home/reachart/public_html/back_api/vendor/yiisoft/yii2/base/ErrorHandler.php(135): yii\web\ErrorHandler->renderException(Object(yii\web\HeadersAlreadySentException))
+#3 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\web\HeadersAlreadySentException))
+#4 {main}
+Previous exception:
+yii\web\HeadersAlreadySentException: Headers already sent in /home/reachart/public_html/back_api/vendor/costa-rico/yii2-images/controllers/ImagesController.php on line 56. in /home/reachart/public_html/back_api/vendor/yiisoft/yii2/web/Response.php:368
+Stack trace:
+#0 /home/reachart/public_html/back_api/vendor/yiisoft/yii2/web/Response.php(341): yii\web\Response->sendHeaders()
+#1 /home/reachart/public_html/back_api/vendor/yiisoft/yii2/base/Application.php(390): yii\web\Response->send()
+#2 /home/reachart/public_html/back_api/backend/web/index.php(17): yii\base\Application->run()
+#3 {main}
+$_SERVER = [
+    'TZ' => 'Asia/Tbilisi',
+    'REDIRECT_REDIRECT_UNIQUE_ID' => 'Y-9P4g6pNOL8sKlnd0rhBgAAABY',
+    'REDIRECT_REDIRECT_SCRIPT_URL' => '/back_api/backend/web/yii2images/images/image-by-item-and-alias',
+    'REDIRECT_REDIRECT_SCRIPT_URI' => 'https://reachartvisual.com/back_api/backend/web/yii2images/images/image-by-item-and-alias',
+    'REDIRECT_REDIRECT_HTTPS' => 'on',
+    'REDIRECT_REDIRECT_SSL_TLS_SNI' => 'reachartvisual.com',
+    'REDIRECT_REDIRECT_STATUS' => '200',
+    'REDIRECT_UNIQUE_ID' => 'Y-9P4g6pNOL8sKlnd0rhBgAAABY',
+    'REDIRECT_SCRIPT_URL' => '/back_api/backend/web/yii2images/images/image-by-item-and-alias',
+    'REDIRECT_SCRIPT_URI' => 'https://reachartvisual.com/back_api/backend/web/yii2images/images/image-by-item-and-alias',
+    'REDIRECT_HTTPS' => 'on',
+    'REDIRECT_SSL_TLS_SNI' => 'reachartvisual.com',
+    'REDIRECT_HANDLER' => 'application/x-httpd-ea-php74',
+    'REDIRECT_STATUS' => '200',
+    'UNIQUE_ID' => 'Y-9P4g6pNOL8sKlnd0rhBgAAABY',
+    'SCRIPT_URL' => '/back_api/backend/web/yii2images/images/image-by-item-and-alias',
+    'SCRIPT_URI' => 'https://reachartvisual.com/back_api/backend/web/yii2images/images/image-by-item-and-alias',
+    'HTTPS' => 'on',
+    'SSL_TLS_SNI' => 'reachartvisual.com',
+    'HTTP_HOST' => 'reachartvisual.com',
+    'HTTP_CONNECTION' => 'keep-alive',
+    'HTTP_SEC_CH_UA' => '"Not_A Brand";v="99", "Google Chrome";v="109", "Chromium";v="109"',
+    'HTTP_SEC_CH_UA_MOBILE' => '?0',
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36',
+    'HTTP_SEC_CH_UA_PLATFORM' => '"Windows"',
+    'HTTP_ACCEPT' => 'image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8',
+    'HTTP_SEC_FETCH_SITE' => 'same-origin',
+    'HTTP_SEC_FETCH_MODE' => 'no-cors',
+    'HTTP_SEC_FETCH_DEST' => 'image',
+    'HTTP_REFERER' => 'https://reachartvisual.com/back_api/backend/web/journal/update?id=276',
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br',
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9,ru;q=0.8',
+    'HTTP_COOKIE' => 'timezone=Asia/Dubai; cpsession=reachart%3acYIQmAC7OKNgXQeM%2cbbe741d8caeac0387ad667dc3da386da; advanced-backend=0244de38c16d96b71f16e0a1242b74b0; _identity-backend=b1f011588906e71ab926fdbab74157a95fb6ae815269006edb78f2dcc3d83161a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B6%2C%22CRCN-jL-sH8ExLZIUNEM-Hid2GRW_-Mh%22%2C2592000%5D%22%3B%7D; _backend_csrf=c33672a53340312c3e65c4c31607513f57e87afbe7f43cf37311b866a8989fe3a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_backend_csrf%22%3Bi%3A1%3Bs%3A32%3A%22Akc0HsBGZcwTstxdxoogXc_0ak_SHnB1%22%3B%7D',
+    'HTTP_X_HTTPS' => '1',
+    'PATH' => '/usr/local/jdk/bin:/usr/kerberos/sbin:/usr/kerberos/bin:/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin:/usr/X11R6/bin:/usr/local/bin:/usr/X11R6/bin:/root/bin:/opt/bin',
+    'SERVER_SIGNATURE' => '',
+    'SERVER_SOFTWARE' => 'Apache',
+    'SERVER_NAME' => 'reachartvisual.com',
+    'SERVER_ADDR' => '91.239.207.130',
+    'SERVER_PORT' => '443',
+    'REMOTE_ADDR' => '176.221.239.92',
+    'DOCUMENT_ROOT' => '/home/reachart/public_html',
+    'REQUEST_SCHEME' => 'https',
+    'CONTEXT_PREFIX' => '/cgi-sys',
+    'CONTEXT_DOCUMENT_ROOT' => '/usr/local/cpanel/cgi-sys/',
+    'SERVER_ADMIN' => 'webmaster@reachartvisual.com',
+    'SCRIPT_FILENAME' => '/home/reachart/public_html/back_api/backend/web/index.php',
+    'REMOTE_PORT' => '64648',
+    'REDIRECT_URL' => '/back_api/backend/web/index.php',
+    'REDIRECT_QUERY_STRING' => 'item=&dirtyAlias=placeHolder_150x.png',
+    'GATEWAY_INTERFACE' => 'CGI/1.1',
+    'SERVER_PROTOCOL' => 'HTTP/1.1',
+    'REQUEST_METHOD' => 'GET',
+    'QUERY_STRING' => 'item=&dirtyAlias=placeHolder_150x.png',
+    'REQUEST_URI' => '/back_api/backend/web/yii2images/images/image-by-item-and-alias?item=&dirtyAlias=placeHolder_150x.png',
+    'SCRIPT_NAME' => '/back_api/backend/web/index.php',
+    'ORIG_SCRIPT_FILENAME' => '/usr/local/cpanel/cgi-sys/ea-php74',
+    'ORIG_PATH_INFO' => '/back_api/backend/web/index.php',
+    'ORIG_PATH_TRANSLATED' => '/home/reachart/public_html/back_api/backend/web/index.php',
+    'ORIG_SCRIPT_NAME' => '/cgi-sys/ea-php74',
+    'PHP_SELF' => '/back_api/backend/web/index.php',
+    'REQUEST_TIME_FLOAT' => 1676627938.3976318836212158203125,
+    'REQUEST_TIME' => 1676627938,
+    'argv' => [
+        'item=&dirtyAlias=placeHolder_150x.png',
+    ],
+    'argc' => 1,
+]

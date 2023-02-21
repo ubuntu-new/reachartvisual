@@ -33,7 +33,7 @@
 										max-width="600"
 									>
 										<a
-											:href="`https://reachartvisual.com/back_api/backend/web/images/${journal.pdf}`"
+											:href="`${journal.pdf}`"
 											target="_blank"
 										>
 											<img

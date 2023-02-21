@@ -17,11 +17,14 @@ $img->getPath();
 
     <?php $form = ActiveForm::begin(['options' => ['enctype' => 'multipart/form-data']]); ?>
 
+    <?= $form->field($model, 'image')->fileInput()?>
+    <?= Html::img(Yii::getAlias('@web').'/'.$img->getPath(), ['alt'=>'some', 'class'=>'thing', 'height'=>'150px', 'width'=>'150px'])?>
+
     <?= $form->field($model, 'title')->textInput(['maxlength' => true]) ?>
 
-    <?= $form->field($model, 'image')->fileInput()?>
 
-    <?php $images = $model->getImages();?>
+
+
 <!--    <div class="row">-->
 <!--    --><?php //foreach ($images as $image):?>
 <!---->

@@ -19,17 +19,7 @@ $img->getPath();
 
     <?php $form = ActiveForm::begin(['options' => ['enctype' => 'multipart/form-data']]); ?>
 
-    <?php $images = $model->getImages();?>
-
-    <div class="row">
-        <?php foreach ($images as $image):?>
-
-            <div class="col-md-3 text-center">
-                <img src="<?=$image->getUrl('150x');?>">
-            </div>
-
-        <?php endforeach;?>
-    </div>
+    <?= Html::img(Yii::getAlias('@web').'/'.$img->getPath(), ['alt'=>'some', 'class'=>'thing', 'height'=>'150px', 'width'=>'150px'])?>
 
     <?= $form->field($model, 'image')->fileInput()?>
 
@@ -37,7 +27,7 @@ $img->getPath();
 
     <?/*= Html::img(Yii::getAlias('@web').'/images/'.$model->img, ['width' => '70px', 'alt' => 'erwrwe']);*/?>
     
-    <?= $form->field($model, 'pdf')->fileInput(['maxlength' => false]) ?>
+
 
     <?= $form->field($model, 'pdf')->textInput(['maxlength' => true]) ?>
 
@@ -53,14 +43,14 @@ $img->getPath();
     <?= $form->field($model, 'facebook')->textInput(['maxlength' => true]) ?>
 
     <?= $form->field($model, 'instagramm')->textInput(['maxlength' => true]) ?>
+<!---->
+<!--    --><?//= $form->field($model, 'linkendin')->textInput(['maxlength' => true]) ?>
 
-    <?= $form->field($model, 'linkendin')->textInput(['maxlength' => true]) ?>
+<!--    --><?//= $form->field($model, 'metakeyword')->textarea(['rows' => 6]) ?>
 
-    <?= $form->field($model, 'metakeyword')->textarea(['rows' => 6]) ?>
+    <?= $form->field($model, 'status')->textInput(['maxlength' => true]) ?>
 
-    <?= $form->field($model, 'status')->dropDownList([ 0 => '0', 1 => '1', 2 => '2', 13 => '13', ], ['prompt' => '']) ?>
-
-    <?= $form->field($model, 'top')->dropDownList([ '0', '1', '2', ], ['prompt' => '']) ?>
+    <?= $form->field($model, 'top')->textInput(['maxlength' => true]) ?>
 
 
 

@@ -3,6 +3,7 @@
 use yii\helpers\Html;
 use yii\grid\GridView;
 
+
 /* @var $this yii\web\View */
 /* @var $searchModel backend\models\JournalSearch */
 /* @var $dataProvider yii\data\ActiveDataProvider */
@@ -31,15 +32,7 @@ $this->params['breadcrumbs'][] = $this->title;
             'description:ntext',
             'facebook',
             //'img',
-            [
-                'attribute' => 'img',
-                'format' => 'raw',
-                'label' => 'img',
-                'value' => function ($data) {
-                    return Html::img(Yii::$app->request->BaseUrl.'/images/' . $data['img'],
-                        ['width' => '60px']);
-                },
-            ],
+
             'file',
 
             //'linkendin',

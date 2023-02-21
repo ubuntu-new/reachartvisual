@@ -103,9 +103,9 @@ class ArtistsController extends Controller
 
             $image =  UploadedFile::getInstance($model , 'image');
             $model->image =$image;
-//            if(!empty($image) && $image->size !== 0) {
-//                $model->removeImage( $model->getImage());
-//            }
+            if(!empty($image) && $image->size !== 0) {
+                $model->removeImage( $model->getImage());
+            }
 
             if($model->image){
                 $model->upload();

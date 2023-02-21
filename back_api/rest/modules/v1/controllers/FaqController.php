@@ -14,12 +14,10 @@ class FaqController extends Controller  {
     public function behaviors() {
 
         $behaviors['cors'] = ['class' => Cors::class];
-
         return $behaviors;
     }
     public  function actionList(){
         //$rcxa = \Yii::$app->request->post('name');
         return FaqAction::getList();
     }
-
 }
