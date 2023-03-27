@@ -47,7 +47,7 @@
 									</svg>
 								</a>
 							</li>
-							<li class="nav-item">
+							<!-- <li class="nav-item">
 								<a href="#">
 									<svg
 										style="width:24px;height:24px"
@@ -91,7 +91,7 @@
 										/>
 									</svg>
 								</a>
-							</li>
+							</li> -->
 						</ul>
 					</div>
 				</div>

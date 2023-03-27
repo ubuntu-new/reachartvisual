@@ -75,7 +75,7 @@ class NewsController extends Controller
      */
     public function actionCreate()
     {
-         $model = new News();
+        $model = new News();
 
         if ($model->load(Yii::$app->request->post()) && $model->save()) {
 

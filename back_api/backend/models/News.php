@@ -2,8 +2,8 @@
 
 namespace backend\models;
 
-//use rico\yii2images\models\Image;
 use Yii;
+use yii\web\UploadedFile;
 
 /**
  * This is the model class for table "news".
@@ -52,7 +52,7 @@ class News extends \yii\db\ActiveRecord
         return [
             [['title', 'title_ge'], 'string', 'max' => 255],
             [['title', 'description', 'short_description','status'], 'required'],
-            [['created','status', 'description', 'description_ge', 'user_id','feautured'], 'safe'],
+            [['created','status', 'description', 'description_ge', 'user_id', 'feautured'], 'safe'],
             [['image'], 'file', 'extensions' => 'png, jpg, jpeg'],
         ];
     }
@@ -82,7 +82,7 @@ class News extends \yii\db\ActiveRecord
 
     public function upload(){
         if($this->validate()){
-            $path = Yii::getAlias('@webroot/images/store'). $this->image->baseName . '.' . $this->image->extension;
+            $path = 'images/store'. $this->image->baseName . '.' . $this->image->extension;
             $this->image->saveAs($path);
             $this->attachImage($path);
             @unlink($path);
