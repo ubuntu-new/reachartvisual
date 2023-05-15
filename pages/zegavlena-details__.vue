@@ -97,5 +97,20 @@ export default {
    //        window.open( this.artists.facebook , "_blank");    
    //    },
    //  }
+   head() {
+      return {
+        title: 'RAV: ZEGAVLENAaaaaa',
+        meta: [
+          // hid is used as unique identifier. Do not use `vmid` for it as it will not work
+             { hid: 'og-type', property: 'og:type', content: 'website' },
+			 { hid: 'og-title', property: 'og:title', content: 'Reach Art Visual – ZEGAVLENA. ააა' },
+			 { hid: 'og-desc', property: 'og:description', content: 'nfluence (“ზეგავლენა” in Georgian) is a monthly online publication that introduces the dynamics of contemporary Georgian art and current cultural processes to a wide range of readers. Our concept is based on getting Georgian contemporary artists known, finding connections from art history, and discovering interesting and unknown visual materials through the thematic sections. Readers of the online edition will get inspiration for interior design through interviews, review blogs, high-quality exclusive design, and also get acquainted with the Georgian art reality from different angles. “Influence” - the name of the publication, is the name of Tea Nili’s concept book.' },
+			 { hid: 'og-image', property: 'og:image',
+  content: 'https://reachartvisual.com/back_api/backend/web/images/store/Abouts/About1/b53a0c.jpg'
+},
+{ hid: 'og-url', property: 'og:url', content: 'https://reachartvisual.com/about-full' },
+        ]
+      }
+    }
 }
 </script>

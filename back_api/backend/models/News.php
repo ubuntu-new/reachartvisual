@@ -68,7 +68,7 @@ class News extends \yii\db\ActiveRecord
             'status' => 'Status',
             'description' => 'Description',
             'created' => 'Created',
-            //'user_id' => 'User ID',
+            //'user_id' => 'User ID',f
             'title_ge' => 'Title Ge',
             'description_ge' => 'Description Ge',
             'metakeyword' => 'Metakeyword',
